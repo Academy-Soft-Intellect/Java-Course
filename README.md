@@ -1,2 +1,5 @@
-# Java-Course
-Academy Soft Intellect Java Course
+# Software Academy SOFT INTELLECT
+http://soft-intellect.com/
+## JAVA Course
+
+
