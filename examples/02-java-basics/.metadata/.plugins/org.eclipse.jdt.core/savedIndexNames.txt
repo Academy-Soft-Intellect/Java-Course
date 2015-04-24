@@ -1,0 +1,2 @@
+INDEX VERSION 1.127+D:\Soft-Intellect\git\Java-Course\examples\02-java-basics\.metadata\.plugins\org.eclipse.jdt.core
+2807440805.index

@@ -1,0 +1,15 @@
+public class Literals {
+	
+	  public static void main(String[] args) {
+		  
+		  boolean result = true;
+		  int numberInDec = 16;
+		  int numberInOct= 020;
+		  int numberInHex = 0x10;
+		  
+		  System.out.println(result);
+		  System.out.println(numberInDec);
+		  System.out.println(numberInOct);
+		  System.out.println(numberInHex);
+	  }
+}

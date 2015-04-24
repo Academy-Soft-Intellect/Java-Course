@@ -1,0 +1,14 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		int a = 5;
+		System.out.println(a);
+		String b = "hello";
+		b.length();
+		boolean c = false;
+		Float dd = 5f;
+
+	}
+
+}
