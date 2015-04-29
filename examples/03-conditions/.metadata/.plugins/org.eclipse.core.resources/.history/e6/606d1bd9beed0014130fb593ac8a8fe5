@@ -1,0 +1,9 @@
+public class AndOrFullOperation {
+	
+	 public static void main(String[] args) {
+		 int d = 5;
+		 d++;
+	 }
+	
+
+}

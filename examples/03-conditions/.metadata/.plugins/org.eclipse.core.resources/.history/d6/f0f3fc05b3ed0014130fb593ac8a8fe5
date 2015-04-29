@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+
+public class StringComparison {
+	
+	 public static void main(String[] args) {
+		 
+		 Scanner input = new Scanner(System.in,"UTF-8");
+
+		 System.out.println("Please enter an text:");
+		 String text = input.nextLine();
+		 if (text == "Lazar") {
+			 System.out.println("Jackpot #1");
+		 }
+		 
+		 if (text.equals("Lazar")) {
+			 System.out.println("Jackpot #2");
+		 }
+		 
+		 String str = "Hello";
+		 String newStr = str;
+		 String he = "He";
+		 String llo = "llo";
+		 
+		 if (str == newStr) {
+			 System.out.println("Match #1");
+		 }
+		 
+		 if (str.equals(newStr)) {
+			 System.out.println("Match #2");
+		 }
+		 
+		 String finalStr = he + llo;
+		 System.out.println(str);
+		 System.out.println(finalStr);
+		 
+		 if (str == finalStr) {
+			 System.out.println("Hello #1");
+		 }
+		 
+		 if (str.equals(finalStr)) {
+			 System.out.println("Hello #2");
+		 }
+
+		 input.close();
+	}
+}
