@@ -1,20 +1,15 @@
-INDEX VERSION 1.127+D:\Soft-Intellect\git\Java-Course\examples\04-loops\.metadata\.plugins\org.eclipse.jdt.core
-3776425001.index
-844601494.index
-358050146.index
-2394392208.index
-3963179895.index
-3176364129.index
-290714306.index
-248351807.index
-949515501.index
-881303192.index
-2448026493.index
-1654984216.index
-2958705335.index
-3520661010.index
-2143716467.index
-3097394219.index
-881895235.index
+INDEX VERSION 1.127+E:\Lazar\SoftIntellect\git\Java-Course\examples\04-loops\.metadata\.plugins\org.eclipse.jdt.core
+1337478678.index
+323251068.index
+2535676096.index
+1045485630.index
+1017853417.index
+4187470955.index
+2674037006.index
+533208796.index
 1353826651.index
-847618560.index
+994834796.index
+355369697.index
+3656756579.index
+115418958.index
+3954291735.index
