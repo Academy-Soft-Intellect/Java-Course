@@ -1,0 +1,29 @@
+public class PrimitiveTypes {
+
+    public static void main(String[] args) {
+    	
+        byte a = 1;
+        System.out.println(a);
+
+//        short b = 2;
+//        System.out.println(b);
+//
+//        int i = 3;
+//        System.out.println(i);
+//
+//        long num = 4L;
+//        System.out.println(num);
+//
+//        float f = 0.33f;
+//        System.out.println(f);
+//
+//        double d = 1.67d;
+//        System.out.println(d);
+//
+//        char ch = 'a';
+//        System.out.println(ch);
+//
+//        boolean bool = true;
+//        System.out.println(bool);
+    }
+}

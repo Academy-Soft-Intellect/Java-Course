@@ -1,0 +1,7 @@
+package soft.intellect.demo;
+
+public interface Walkable {
+	
+	public void Walk();
+
+}

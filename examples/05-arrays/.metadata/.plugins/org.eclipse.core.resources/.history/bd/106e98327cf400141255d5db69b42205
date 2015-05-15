@@ -1,0 +1,16 @@
+public class Foreach {
+	
+	public static void main(String[] args) {
+		String[] weekDays = { "Monday",
+							"Tuesday",
+							"Wednesday",
+							"Thursday",
+							"Friday",
+							"Saturday",
+							"Sunday" };
+		
+		for (String day : weekDays) {
+			System.out.println(day);
+		}
+	}
+}

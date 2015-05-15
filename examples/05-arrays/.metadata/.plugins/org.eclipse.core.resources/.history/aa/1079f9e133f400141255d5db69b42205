@@ -1,0 +1,33 @@
+
+public class ArraysDemo2 {
+
+	public static void main(String[] args) {
+		
+		String[] names = { "Peter", "Maria", "Katya", "Todor" };
+		
+		for (int i = 0; i<names.length; i++) {
+			System.out.println("names[" + i + "] = " + names[i]);
+		}
+		
+		System.out.println();
+		
+		String academy = "IT Academy";
+		
+		for (int i = 0; i < academy.length(); i++) {
+			char symbol = academy.charAt(i);
+			System.out.printf("Символ �? индек�? %d : %s", i, symbol);
+			System.out.println();
+		}
+		
+		System.out.println();
+		
+		char[] academyArray = academy.toCharArray();
+		
+		for (int i = 0; i < academyArray.length; i++) {
+			System.out.printf("Индек�? %d : %s", i, academyArray[i]);
+			System.out.println();
+		}
+
+	}
+
+}

@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+
+public class StringComparisonScan {
+	
+	 public static void main(String[] args) {
+		 
+		 Scanner input = new Scanner(System.in, "UTF-8");
+		 System.out.println("Please enter \"Hello\":");
+		 
+		 String text = input.nextLine();
+		 System.out.println(text);
+		 
+		 String str = "Hello";
+		 System.out.println(str);
+		 
+		 if (str == text) {
+			 System.out.println("str == text");
+		 }
+
+		 if (str.equals(text)) {
+			 System.out.println("str.equals(text)");
+		 }
+		 
+		 input.close();
+	
+	}
+}

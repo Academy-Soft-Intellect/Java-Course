@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in,"UTF-8");
+		String a = input.nextLine();
+		if (a.equals("10"){
+		System.out.print("Valid card!");
+		} 
+	
+	
+	}
+}

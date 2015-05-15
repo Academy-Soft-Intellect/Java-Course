@@ -1,0 +1,66 @@
+import java.util.Scanner;
+
+
+public class StringComparison {
+	
+	 public static void main(String[] args) {
+		 
+
+		 String str = "Hello";
+		 String helloStr = "Hello";
+		 System.out.println(str);
+		 System.out.println(helloStr);
+		 
+		 if (str == helloStr) {
+			 System.out.println("str == helloStr");
+		 }
+		 
+		 if (str == "Hello") {
+			 System.out.println("str == helloStr");
+		 }
+		 
+//		 
+//		 Scanner input = new Scanner(System.in, "UTF-8");
+//		 System.out.println("Please enter an text:");
+//		 
+//		 String text = input.nextLine();
+//		 if (text == "Lazar") {
+//			 System.out.println("Jackpot #1");
+//		 }
+//		 
+//		 if (text.equals("Lazar")) {
+//			 System.out.println("Jackpot #2");
+//		 }
+//		 input.close();
+		 
+//		 String newStr = helloStr;
+//		 String he = "He";
+//		 String llo = "llo";
+//		 String finalStr = he + llo;
+//		 
+//		 System.out.println(helloStr);
+//		 System.out.println(newStr);
+//		 System.out.println(finalStr);
+//		 
+//		 if (helloStr == newStr) {
+//			 System.out.println("str == newStr");
+//		 }
+//		 
+//		 if (helloStr.equals(newStr)) {
+//			 System.out.println("Match #2");
+//		 }
+//		 
+//		
+//		
+//		 
+//		 if (str == finalStr) {
+//			 System.out.println("Hello #1");
+//		 }
+//		 
+//		 if (str.equals(finalStr)) {
+//			 System.out.println("Hello #2");
+//		 }
+//		 
+//		
+	}
+}

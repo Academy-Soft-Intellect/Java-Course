@@ -1,0 +1,12 @@
+public class Variables {
+	  public static void main(String[] args) {
+		  
+		  int num = 51;
+		  System.out.println(num);
+		  num = 102;
+		  System.out.println(num);
+
+
+		  
+	  }
+}
