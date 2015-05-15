@@ -1,0 +1,5 @@
+public interface Eatable {
+	public void wakeup();
+	public void sleep();
+
+}

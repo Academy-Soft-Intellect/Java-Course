@@ -1,0 +1,29 @@
+
+public class Person implements Walkable {
+	
+	protected String firstName;
+	protected String lastName;
+	
+	public Person(){
+		
+	}
+	
+	public Person(String firstName, String lastName){
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
+
+	@Override
+	public void Walk() {
+		System.out.println("Walking...");
+		
+	}
+
+	@Override
+	public void Walk(int distrance) {
+		System.out.println("Walking" + distrance  + " kilometers...");
+		
+	}
+	
+
+}
