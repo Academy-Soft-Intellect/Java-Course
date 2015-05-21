@@ -1,0 +1,5 @@
+public interface CheckHomework {
+
+	public void checkHomework();
+	
+}

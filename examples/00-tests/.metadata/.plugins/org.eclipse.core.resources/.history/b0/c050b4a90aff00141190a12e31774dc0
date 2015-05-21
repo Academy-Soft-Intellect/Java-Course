@@ -1,0 +1,43 @@
+public abstract class Person {
+
+	public static int count;
+	protected String firstName;
+	protected String lastName;
+	protected int experienceInYears;
+	
+	public Person() {}
+	
+	public Person(String name, String lastName, int experienceInYears) {
+		setName(name);
+		setLastName(lastName);
+		setYearsOfWork(experienceInYears);
+	}
+	
+	public String getName() {
+		return firstName;
+	}
+	
+	public void setName(String name) {
+		this.firstName = name;
+	}
+	
+	public String getLastName() {
+		return lastName;
+	}
+	
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+	
+	public int getYearsOfWork() {
+		return experienceInYears;
+	}
+	
+	public void setYearsOfWork(int yearsOfWork) {
+		if (yearsOfWork >= 0) {
+			this.experienceInYears = yearsOfWork;
+		} else {
+			System.out.println("Enter a positive number!");
+		}
+	}
+}

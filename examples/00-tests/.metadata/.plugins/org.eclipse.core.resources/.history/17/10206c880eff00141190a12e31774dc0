@@ -1,0 +1,31 @@
+
+public class Assistant extends Lecturer {
+	
+	private boolean isChief;
+	
+	public Assistant() {
+		super();
+	}
+	
+	public Assistant(String name, String lastName, int yearsOfWork, boolean chief) {
+		super(name, lastName, yearsOfWork);
+		this.isChief = chief;
+	}
+
+	public void printInformation() {
+		System.out.println("My name is " + this.getFirstName() + " " + this.getLastName());
+		System.out.println("and I am chief assistant:.";
+	}
+	
+	public void writeArticle() {
+		System.out.println("Writing article!");
+	}
+	
+	public void checkHomework() {
+		System.out.println("Checking homework from Assistant!");
+	}
+	
+	public void checkExam() {
+		System.out.println("Checking exam!");
+	}
+}
