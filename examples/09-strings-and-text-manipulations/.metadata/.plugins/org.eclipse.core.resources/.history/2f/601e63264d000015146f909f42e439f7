@@ -1,0 +1,22 @@
+package concatenation;
+
+import java.util.Date;
+
+public class SpeedTestConcatenation {
+
+	@SuppressWarnings("deprecation")
+	public static void main(String[] args) {
+		String concatenator = "Repeated Sentances ";
+		String str1 = "";
+		
+		long start =  System.currentTimeMillis();
+		for(int i = 0; i < 50000; i++){
+			str1 += concatenator;
+		}
+		long end = System.currentTimeMillis();
+		System.out.println((end - start)/1000);
+		
+
+	}
+
+}

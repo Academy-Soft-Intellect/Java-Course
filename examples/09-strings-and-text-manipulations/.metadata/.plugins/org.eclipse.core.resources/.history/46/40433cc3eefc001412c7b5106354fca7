@@ -1,0 +1,23 @@
+
+public class MethodToString {
+
+	public static void main(String[] args) {
+		Person lazar = new Person("Lazar", "Sestrimski");
+		
+		String personName = lazar.toString();
+		
+		String greeting = "My name is " + lazar + "!";
+		
+		System.out.println(greeting);
+		
+		Person emma = new Person("Emma", "Watson");
+		
+		greeting = String.format("Her name is %s!", emma);
+		
+		System.out.println(greeting);
+		
+		System.out.println(emma);
+
+	}
+
+}

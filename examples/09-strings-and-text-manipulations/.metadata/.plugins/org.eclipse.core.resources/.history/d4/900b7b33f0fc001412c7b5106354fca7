@@ -1,0 +1,24 @@
+package comparison;
+
+public class StringEquals {
+
+	public static void main(String[] args) {
+		
+		String first = "I am writing in Java!";
+		
+		String second = "I am" + " writing in " + "Java!";
+		
+		String third = second;
+		
+		boolean refComparisonFirstSecond = first == second;
+		
+		System.out.format("Reference Comparison With ==: %s \n", refComparisonFirstSecond);
+		
+		boolean refComparisonSecondThird = s == second;
+		
+		boolean valueComparison = first.equals(second);
+		
+		System.out.format("Сравн�?ване на �?трингове �? equals: %s", valueComparison);
+
+	}
+}

@@ -1,0 +1,47 @@
+package searching;
+
+public class SearchingInStrings {
+
+	public static void main(String[] args) {
+		
+		//index of
+		String javaLang = "Where is Java? Does Java present in the sentance?";
+		
+		int javaIndex = javaLang.indexOf("Java");
+		
+		System.out.format("The word: Java is located with index %d \n", javaIndex);
+		
+		int secondJavaIndex = javaLang.indexOf("Java", 16);
+		
+		System.out.format("Думата Java �?е намира и на %d индек�? \n", secondJavaIndex);
+		
+		//starts with
+		
+		String example = "Java Programming";
+		
+		boolean startsWith = example.startsWith("Java");//провер�?ва дали низа започва �? Java
+		
+		System.out.format("Изразът започва �? Java: %s \n", startsWith);
+		
+		//ends with
+		
+		String coding = "I love coding";
+		
+		boolean endsWith = coding.endsWith("coding");//провер�?ва дали завършва �? coding
+		
+		System.out.format("Изразът завършва �? coding: %s \n", endsWith);
+		
+		//contains
+		 
+		String oop = "Java is object oriented language";
+		
+		boolean contains = oop.contains("object");//провер�?ва дали �?ъдържа object
+		
+		System.out.format("Изразът �?ъдържа object: %s \n", contains);
+		
+		
+		
+
+	}
+
+}
