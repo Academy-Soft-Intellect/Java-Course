@@ -1,19 +1,19 @@
 public abstract class Car {
 
-	private double price;
+	protected double price;
 	
 	public Car() {
-		
+		setPrice(0);
 	}
 	
 	public Car(double price) {
 		setPrice(price);
 	}
-	
+
 	public double getPrice() {
 		return price;
 	}
-	
+
 	public void setPrice(double price) {
 		this.price = price;
 	}

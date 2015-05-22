@@ -3,7 +3,7 @@ import interfaceses.CheckHomework;
 
 public abstract class Person implements CheckHomework {
 
-	public static int count;
+	private static int count;
 	protected String firstName;
 	protected String lastName;
 	protected int experienceInYears;

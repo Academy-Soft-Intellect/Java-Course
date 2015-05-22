@@ -1,7 +1,7 @@
 public abstract class Stock {
 
-	private double price;
-	private static boolean isAvailable;
+	protected double price;
+	protected static boolean isAvailable;
 	
 	public Stock() {
 		

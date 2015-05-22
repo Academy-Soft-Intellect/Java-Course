@@ -1,7 +1,7 @@
 public abstract class BubbleSort {
 	
 	private static boolean flag = true;
-	private static double temp;
+	private static Car temp;
 	
 	BubbleSort() {
 		flag = true;
@@ -14,9 +14,9 @@ public abstract class BubbleSort {
 			
 			for (int i = 0; i < cars.length - 1; i++) {
 				if (cars[i].getPrice() > cars[i + 1].getPrice()) {
-					temp = cars[i].getPrice();
-					cars[i].setPrice(cars[i + 1].getPrice());
-					cars[i + 1].setPrice(temp);
+					temp = cars[i];
+					cars[i] = cars[i + 1];
+					cars[i + 1] = temp;
 					flag = true;
 				}
 			}
