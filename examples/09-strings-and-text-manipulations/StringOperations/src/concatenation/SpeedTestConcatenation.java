@@ -7,7 +7,7 @@ public class SpeedTestConcatenation {
 		String str = "";
 		
 		long start1 =  System.currentTimeMillis();
-		for(int i = 0; i < 50000; i++){
+		for(int i = 0; i < 100; i++){
 			str += concatenator;
 		}
 		long end1 = System.currentTimeMillis();
@@ -18,7 +18,7 @@ public class SpeedTestConcatenation {
 		StringBuilder sb = new StringBuilder();
 		
 		long start2 =  System.currentTimeMillis();
-		for(int i = 0; i < 50000; i++){
+		for(int i = 0; i < 100; i++){
 			sb.append(concatenator);
 		}
 		long end2 = System.currentTimeMillis();

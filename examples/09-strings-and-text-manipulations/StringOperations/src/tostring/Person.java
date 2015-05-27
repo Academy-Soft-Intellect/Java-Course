@@ -11,6 +11,7 @@ public class Person {
 
 	@Override
 	public String toString() {
-		return this.firstName + " " + this.lastName;
+		//return this.firstName + " " + this.lastName;
+		return String.format("%s %s",this.firstName, this.lastName);
 	}
 }

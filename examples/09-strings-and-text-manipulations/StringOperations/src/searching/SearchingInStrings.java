@@ -22,7 +22,7 @@ public class SearchingInStrings {
 		
 		
 		//demonstration - starts with	
-		String example = "Java Programming";
+		String example = "This Java Programming";
 		
 		boolean startsWith = example.startsWith("Java");
 		System.out.format("The sentance begins with thew word \"Java\": %s \n", startsWith);

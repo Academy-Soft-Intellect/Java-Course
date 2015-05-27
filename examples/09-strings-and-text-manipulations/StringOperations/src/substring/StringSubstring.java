@@ -8,7 +8,7 @@ public class StringSubstring {
 		String firstPart = expression.substring(0, 6);
 		System.out.println(firstPart);
 		
-		String seondPart = expression.substring(8);
+		String seondPart = expression.substring(8, 10);
 		System.out.println(seondPart);
 	}
 }

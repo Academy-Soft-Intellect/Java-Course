@@ -17,14 +17,12 @@ public class WritingFIles {
 //			FileWriter fileStream = new FileWriter(filePath, true);
 			
 			BufferedWriter writer = new BufferedWriter(fileStream);
-
 			
 			for (int i = 0; i < 10; i++) {
 				int number = rand.nextInt(100);
-				writer.write(Integer.toString(number));
 				writer.newLine();
 			}
-			
+			System.out.print((int)'a');
 			writer.close();
 			
 		} catch (Exception e) {

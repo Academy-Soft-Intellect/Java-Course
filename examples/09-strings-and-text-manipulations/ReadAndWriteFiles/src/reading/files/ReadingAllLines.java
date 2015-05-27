@@ -27,6 +27,7 @@ public class ReadingAllLines {
 				 System.out.println(line);
 			}
 			
+			
 		} catch (IOException e) {
 			System.out.println("Error while reading a file.");
 			System.out.println(e.getMessage());

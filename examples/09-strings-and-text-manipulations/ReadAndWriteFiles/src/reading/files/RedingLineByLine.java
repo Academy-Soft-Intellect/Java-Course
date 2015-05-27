@@ -10,7 +10,7 @@ public class RedingLineByLine {
 //		readFile("..\\files\\java.txt");
 
 	}
-	
+		
 	public static void readFile(String path){
 		try {
 			
