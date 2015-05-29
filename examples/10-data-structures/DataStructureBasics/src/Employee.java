@@ -4,7 +4,6 @@ public class Employee {
 	private String lastName;
 	
 	public Employee(String firstName, String lastName) {
-		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
 	}
@@ -25,10 +24,10 @@ public class Employee {
 		this.lastName = lastName;
 	}
 	
-//	 @Override
-//	public int hashCode() {
-//		 return (this.firstName + this.lastName).hashCode();
-//     }
+	 @Override
+	public int hashCode() {
+		 return (this.firstName + this.lastName).hashCode();
+     }
 	 
 	 @Override
 	 public boolean equals(Object o){
@@ -44,8 +43,8 @@ public class Employee {
 	    return this.hashCode() == employee.hashCode();
 	  }
 	 
-//	 @Override
-//	 public String toString() {
-//		 return this.firstName + " " + this.lastName;
-//     }
+	 @Override
+	 public String toString() {
+		 return this.firstName + " " + this.lastName;
+     }
 }

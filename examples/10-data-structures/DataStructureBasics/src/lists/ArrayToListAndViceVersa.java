@@ -17,7 +17,8 @@ public class ArrayToListAndViceVersa {
 		//Object[] arrayFromList = list.toArray();
 		String[] arrayFromList = list.toArray(new String[list.size()]);
 		
-		for (String string : arrayFromList) {
+		for (Object string : arrayFromList) {
+			String temp = string.toString();
 			System.out.println(string);
 		}
 		

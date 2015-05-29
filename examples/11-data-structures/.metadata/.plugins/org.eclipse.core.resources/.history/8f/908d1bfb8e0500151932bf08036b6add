@@ -1,0 +1,60 @@
+import java.util.ArrayList;
+import java.util.Comparator;
+
+public class ListSort {
+	
+	
+	public static void main(String[] arg){
+		ArrayList<Person> list1 = new ArrayList<Person>();
+		list1.add(new Person("Lazar", "Sestrimski"));
+		list1.add(new Person("Georgi", "Georgiev"));
+		list1.add(new Person("Hristo", "Hristov"));
+		
+		list1.sort(new Comparator<T>() {
+		});
+	}
+
+	public int compare(Person s1, Person s2) {
+		   String PersonFirstName1 = s1.getFirstName().toUpperCase();
+		   String PersonFirstName2 = s2.getFirstName().toUpperCase();
+		   
+		   String StudentName1 = s1.getFirstName().toUpperCase();
+		   String StudentName2 = s2.getFirstName().toUpperCase();
+
+		   //ascending order
+		   return StudentName1.compareTo(StudentName2);
+
+		   //descending order
+		   //return StudentName2.compareTo(StudentName1);
+	    }};
+	
+
+}
+
+class Person{
+	
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	String firstName;
+	String lastName;
+	
+	Person(String firstName, String lastName){
+		setFirstName(firstName);
+		setLastName(lastName);
+		
+	}
+}

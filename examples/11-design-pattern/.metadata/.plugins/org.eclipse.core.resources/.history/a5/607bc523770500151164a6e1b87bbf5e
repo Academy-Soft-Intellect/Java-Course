@@ -1,0 +1,5 @@
+package color.factory;
+
+public class Blue {
+
+}
