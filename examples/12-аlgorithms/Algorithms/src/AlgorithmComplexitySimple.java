@@ -13,7 +13,7 @@ public class AlgorithmComplexitySimple {
 				
 				int first = numbers[i];
 				int second = numbers[j];
-				
+				 
 				if(first == second){
 					countCouples++;
 					break;
