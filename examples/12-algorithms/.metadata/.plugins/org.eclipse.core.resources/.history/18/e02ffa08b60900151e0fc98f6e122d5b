@@ -1,0 +1,6 @@
+
+public class AlgorithmComplexitySimple {
+	public static void main(String[] args) {
+		System.out.print("fff");
+	}
+}
