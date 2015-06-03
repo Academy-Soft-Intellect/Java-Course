@@ -1,0 +1,29 @@
+public class Human extends Creature {
+
+	private String name;
+	
+	public Human(){
+		setName("");
+		setAge(0);
+	}
+	
+	public Human(String name, int age){
+		setName(name);
+		setAge(age);
+	}
+		
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void greet() {
+		System.out.println("Hello I am " + this.name);
+		System.out.println("I am " + super.age + " years old");
+	}
+	
+	public void test();
+
+}

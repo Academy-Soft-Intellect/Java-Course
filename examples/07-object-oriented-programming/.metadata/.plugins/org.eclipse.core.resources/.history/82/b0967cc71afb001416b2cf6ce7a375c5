@@ -1,0 +1,31 @@
+
+public class Dog extends Animal {
+	
+	protected String breed;
+	
+	public Dog(String breed){
+		
+	}
+	
+	public void SayGoodbye(){
+		System.out.println("Goodbye");
+	}
+	
+	public void wakeup() {
+		System.out.println("Wake up");
+	}
+
+	public void sleep() {
+		System.out.println("Sleep");
+	}
+
+	public void walk() {
+		System.out.println("Walk");
+	}
+
+	public void run() {
+		System.out.println("Run");
+	}
+
+
+}

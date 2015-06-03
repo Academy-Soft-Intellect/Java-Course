@@ -1,0 +1,10 @@
+
+public interface Walkable {
+	public void Walk();
+	public void Walk(int distrance);
+	
+	public void Stop(){
+//		
+//	}
+
+}

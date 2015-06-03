@@ -1,0 +1,27 @@
+1432138058277	Move files
+1432138135780	Rename field 'name'
+1432138199019	Rename method 'getYearsOfWork'
+1432138206947	Rename method 'setYearsOfWork'
+1432138414462	Rename field 'university'
+1432138547216	Rename method 'exercise'
+1432138561916	Rename method 'exercise'
+1432138565935	Rename method 'exercise'
+1432138632241	Rename local variable 'exercise1'
+1432138648013	Rename local variable 'exercise1'
+1432138657620	Rename local variable 'exercise2'
+1432138950655	Delete element
+1432139017556	Rename package 'interfaces'
+1432139021335	Move compilation unit
+1432139105866	Delete element
+1432139136857	Rename field 'college'
+1432139312651	Rename field 'classes'
+1432139357263	Rename method 'classesInfo'
+1432139411098	Rename method 'classesListInformatino'
+1432139477524	Rename method 'classesListInformation'
+1432139620159	Rename field 'chief'
+1432139652212	Rename method 'info'
+1432139746851	Rename method 'getName'
+1432139806678	Rename method 'getfirstName'
+1432139996995	Rename method 'exam'
+1432140030820	Rename method 'info'
+1432140175378	Move compilation units
