@@ -1,0 +1,28 @@
+package tree;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+
+
+public class SimpleTree<T> {
+
+    T data;
+    SimpleTree<T> parent;
+    List<SimpleTree<T>> children;
+
+    public SimpleTree(T data) {
+        this.data = data;
+        this.children = new LinkedList<SimpleTree<T>>();
+    }
+
+    public SimpleTree<T> addChild(T child) {
+    	SimpleTree<T> childNode = new SimpleTree<T>(child);
+        childNode.parent = this;
+        this.children.add(childNode);
+        return childNode;
+    }
+
+    // other features ...
+
+}
