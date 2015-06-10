@@ -1,7 +1,7 @@
-public class DeadlockExample {
+public class DeadlockExample1 {
 	public static void main(String[] args) {
-		final String resource1 = "word 1";
-		final String resource2 = "word 2";
+		final String resource1 = "ratan jaiswal";
+		final String resource2 = "vimal jaiswal";
 		
 		// t1 tries to lock resource1 then resource2
 		Thread t1 = new Thread() {
