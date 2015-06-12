@@ -1,5 +1,5 @@
 class MethodTable {
-	// void printTable(int n){
+	 //void printTable(int n){
 	synchronized void printTable(int n) {
 		for (int i = 1; i <= 5; i++) {
 			System.out.println(n * i);
@@ -38,7 +38,6 @@ class MyThread2 extends Thread {
 
 class SynchronizedMethod {
 	public static void main(String args[]) {
-		System.out.println("dasda");
 		MethodTable obj = new MethodTable();
 		MyThread1 t1 = new MyThread1(obj);
 		MyThread2 t2 = new MyThread2(obj);

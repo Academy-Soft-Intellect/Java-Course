@@ -1,4 +1,4 @@
-class WorkerThread implements Runnable {
+class WorkerThread extends Thread {
 	private String message;
 
 	public WorkerThread(String s) {
@@ -6,8 +6,7 @@ class WorkerThread implements Runnable {
 	}
 
 	public void run() {
-		System.out.println(Thread.currentThread().getName()
-				+ " (Start) message = " + message);
+		System.out.println(Thread.currentThread().getName()	+ " (Start) message = " + message);
 		processMessage();
 		System.out.println(Thread.currentThread().getName() + " (End)");
 	}

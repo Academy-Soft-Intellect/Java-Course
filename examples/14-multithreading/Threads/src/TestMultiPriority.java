@@ -1,4 +1,4 @@
-class TestMultiPriority1 extends Thread {
+class TestMultiPriority extends Thread {
 	public void run() {
 		System.out.println("running thread name is:"
 				+ Thread.currentThread().getName());
@@ -7,10 +7,10 @@ class TestMultiPriority1 extends Thread {
 	}
 
 	public static void main(String args[]) {
-		TestMultiPriority1 m1 = new TestMultiPriority1();
-		TestMultiPriority1 m2 = new TestMultiPriority1();
-		m1.setPriority(Thread.MIN_PRIORITY);
-		m2.setPriority(Thread.MAX_PRIORITY);
+		TestMultiPriority m1 = new TestMultiPriority();
+		TestMultiPriority m2 = new TestMultiPriority();
+		m1.setPriority(Thread.MAX_PRIORITY);
+		m2.setPriority(Thread.MIN_PRIORITY);
 		m1.start();
 		m2.start();
 

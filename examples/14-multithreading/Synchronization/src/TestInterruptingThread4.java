@@ -3,13 +3,14 @@ public class TestInterruptingThread4 extends Thread {
 	public void run() {
 		for (int i = 1; i <= 2; i++) {
 			if (Thread.interrupted()) {
-				System.out.println("code for interrupted thread");
+				System.out.println(getName() + "code for interrupted thread");
 			} else {
-				System.out.println("code for normal thread");
+				System.out.println(getName() + "code for normal thread");
 			}
 
 		}// end of for loop
 	}
+	
 
 	public static void main(String args[]) {
 

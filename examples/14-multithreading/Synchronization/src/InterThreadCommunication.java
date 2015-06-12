@@ -14,6 +14,7 @@ class Customer {
 		}
 		this.amount -= amount;
 		System.out.println("withdraw completed...");
+		System.out.println(this.amount);
 	}
 
 	synchronized void deposit(int amount) {
@@ -21,18 +22,20 @@ class Customer {
 		this.amount += amount;
 		System.out.println("deposit completed... ");
 		notify();
+		System.out.println(this.amount);
 	}
 }
 
 class InterThreadCommunication {
 	public static void main(String args[]) {
-		final Customer c = new Customer();
-
-		new Thread() {
+		Customer c = new Customer();
+		
+		Thread t1 = new Thread() {
 			public void run() {
 				c.withdraw(15000);
 			}
-		}.start();
+		};
+		t1.start();
 
 		new Thread() {
 			public void run() {

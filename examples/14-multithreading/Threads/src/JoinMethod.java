@@ -18,15 +18,14 @@ public class JoinMethod extends Thread {
 		Thread t2 = new JoinMethod();
 		Thread t3 = new JoinMethod();
 		t1.start();
+		
 		try {
 			t1.join();
 		} catch (Exception e) {
 			System.out.println(e);
 
 		}
-
 		t2.start();
-		t3.start();
+		t3.start();	
 	}
-
 }
