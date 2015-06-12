@@ -1,0 +1,65 @@
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JButton;
+import java.awt.Font;
+
+
+public class StorageSystem {
+
+	private JFrame frmStorageSystem;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					StorageSystem window = new StorageSystem();
+					window.frmStorageSystem.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public StorageSystem() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frmStorageSystem = new JFrame();
+		frmStorageSystem.setTitle("STORAGE SYSTEM");
+		frmStorageSystem.setBounds(100, 100, 750, 700);
+		frmStorageSystem.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmStorageSystem.getContentPane().setLayout(null);
+		
+		JButton btnAddNewItem = new JButton("Add New Item");
+		btnAddNewItem.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		btnAddNewItem.setBounds(10, 527, 155, 23);
+		frmStorageSystem.getContentPane().add(btnAddNewItem);
+		
+		JButton btnEditItem = new JButton("Edit Item");
+		btnEditItem.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		btnEditItem.setBounds(175, 527, 155, 23);
+		frmStorageSystem.getContentPane().add(btnEditItem);
+		
+		JButton button = new JButton("Edit Item");
+		button.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		button.setBounds(340, 527, 155, 23);
+		frmStorageSystem.getContentPane().add(button);
+		
+		JButton button_1 = new JButton("Edit Item");
+		button_1.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		button_1.setBounds(505, 527, 155, 23);
+		frmStorageSystem.getContentPane().add(button_1);
+	}
+}
