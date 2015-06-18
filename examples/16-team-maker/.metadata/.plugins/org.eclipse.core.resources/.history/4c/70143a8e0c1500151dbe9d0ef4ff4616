@@ -1,0 +1,12 @@
+import java.text.DateFormat;
+import java.util.Date;
+
+
+public abstract class Test1 {
+
+	public static void main(String[] args) {
+		Date d = new Date(2015, 06,17);
+
+	}
+
+}

@@ -1,0 +1,24 @@
+import java.text.DateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
+
+public abstract class Test1 {
+
+	public static void main(String[] args) {
+		 Calendar calendar = Calendar.getInstance();
+		 	Date d = calendar.getTime();
+		    
+		    calendar.add(Calendar.DATE, -10);
+		    
+		    Date d2 = calendar.getTime();
+		    
+		    System.out.println("date before 10 days : " + (calendar.get(Calendar.MONTH) + 1) + "-"
+		        + calendar.get(Calendar.DATE) + "-" + calendar.get(Calendar.YEAR));
+		    
+		    System.out.println(d);
+		    System.out.println(d.getTime() > d2.getTime());
+
+	}
+
+}

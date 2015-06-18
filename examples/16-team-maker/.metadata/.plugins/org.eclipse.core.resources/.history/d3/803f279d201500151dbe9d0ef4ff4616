@@ -1,0 +1,41 @@
+import java.io.ObjectInputStream.GetField;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
+
+
+public abstract class Test1 {
+
+	public static void main(String[] args) {
+
+		String str = "Wed Jun 17 21:37:32 EEST 2015";
+		DateFormat df = new SimpleDateFormat("EEE MMM dd kk:mm:ss z yyyy", Locale.US);
+		
+		
+		Calendar c = Calendar.getInstance();
+		c.set(2015, 6 - 1, 17, 0, 0);  
+		Date dd = c.getTime();
+		
+		ArrayList<Item> dateList = new ArrayList<Item>();
+		dateList.add(new Item(c.getTime(), "",1));
+
+		 System.out.println(dateList.get(0));
+		
+		 Calendar calendar = Calendar.getInstance();
+	 	Date d = calendar.getTime();
+	    
+	    calendar.add(Calendar.DATE, - 7);
+	    
+	    Date d2 = calendar.getTime();
+	    
+	    System.out.println(d);
+	    System.out.println(d2);
+	  
+	    System.out.println(d.toString());
+
+	}
+
+}

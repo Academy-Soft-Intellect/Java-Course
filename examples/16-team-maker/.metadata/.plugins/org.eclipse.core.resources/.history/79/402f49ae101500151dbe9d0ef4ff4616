@@ -1,0 +1,21 @@
+import java.text.DateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
+
+public abstract class Test1 {
+
+	public static void main(String[] args) {
+		Date d = new Date();
+		
+//		 Calendar cal = Calendar.getInstance();
+//		Date currentDate = cal.getTime();
+//		  long result = currentDate.getTime() - d.getTime();
+//		  
+//		  Date r = new Date(result);
+//		  System.out.println(r.getDay() + " "+ r.getMonth() + " " + r.getYear());
+		  System.out.println(d.getDay() + " "+ d.getMonth() + " " + d.getYear());
+
+	}
+
+}

@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+
+public class Settings
+{
+
+    public ArrayList<String> get_playersList() {
+		return _playersList;
+	}
+
+	public void set_playersList(ArrayList<String> _playersList) {
+		this._playersList = _playersList;
+	}
+
+	public int get_numberOfTeams() {
+		return _numberOfTeams;
+	}
+
+	public void set_numberOfTeams(int _numberOfTeams) {
+		this._numberOfTeams = _numberOfTeams;
+	}
+
+	private ArrayList<String> _playersList;
+
+    private int _numberOfTeams;
+}

@@ -1,0 +1,20 @@
+import java.text.DateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
+
+public abstract class Test1 {
+
+	public static void main(String[] args) {
+		 Calendar now = Calendar.getInstance();
+		    System.out.println("Current date : " + (now.get(Calendar.MONTH) + 1) + "-"
+		        + now.get(Calendar.DATE) + "-" + now.get(Calendar.YEAR));
+
+		    now = Calendar.getInstance();
+		    now.add(Calendar.DATE, -10);
+		    System.out.println("date before 10 days : " + (now.get(Calendar.MONTH) + 1) + "-"
+		        + now.get(Calendar.DATE) + "-" + now.get(Calendar.YEAR));
+
+	}
+
+}
