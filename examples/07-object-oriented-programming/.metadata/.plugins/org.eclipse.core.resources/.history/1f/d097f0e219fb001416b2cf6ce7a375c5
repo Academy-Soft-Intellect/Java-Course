@@ -1,6 +1,0 @@
-
-public interface Eatable {
-	public void Walk();
-	public void Run();
-
-}

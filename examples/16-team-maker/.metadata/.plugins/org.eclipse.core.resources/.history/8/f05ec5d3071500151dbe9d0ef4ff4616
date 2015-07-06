@@ -1,6 +1,0 @@
-
-public class Information {
-	private int residue;
-	private int playersPerTeam;
-
-}

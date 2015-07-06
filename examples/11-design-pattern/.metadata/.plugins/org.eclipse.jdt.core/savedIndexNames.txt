@@ -1,7 +1,0 @@
-INDEX VERSION 1.127+D:\Soft-Intellect-Academy\Java-Course\Java-Course\examples\11-design-pattern\.metadata\.plugins\org.eclipse.jdt.core
-3188665512.index
-3008664913.index
-3680324189.index
-3050895202.index
-1472454861.index
-627444988.index

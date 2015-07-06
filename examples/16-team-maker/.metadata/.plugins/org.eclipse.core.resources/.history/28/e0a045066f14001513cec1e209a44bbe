@@ -1,7 +1,0 @@
-public class Settings
-{
-
-    private ArrayList<String> _playersList;
-
-    private int _numberOfTeams;
-}

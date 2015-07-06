@@ -1,6 +1,0 @@
-public interface Walkable {
-	
-	public void Walk();
-	public void Run();
-
-}

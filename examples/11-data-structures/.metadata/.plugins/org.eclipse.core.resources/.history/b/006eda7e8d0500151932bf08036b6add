@@ -1,8 +1,0 @@
-import java.util.LinkedList;
-import java.util.Queue;
-
-
-public class ListSort {
-	Queue<String> queue = new LinkedList<String>();
-
-}

@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Move 6 elements to &apos;loops/src&apos;&#x0D;&#x0A;- Original project: &apos;loops&apos;&#x0D;&#x0A;- Destination element: &apos;loops/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     Continue.java&#x0D;&#x0A;     DoWhileLoop.java&#x0D;&#x0A;     WhileLoop.java&#x0D;&#x0A;     ForLoop.java&#x0D;&#x0A;     Break.java&#x0D;&#x0A;     NestedLoops.java&#x0D;&#x0A;- Update references to refactored element" description="Move files" destination="/src" element1="Continue.java" element2="DoWhileLoop.java" element3="WhileLoop.java" element4="ForLoop.java" element5="Break.java" element6="NestedLoops.java" files="6" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1430945213386" units="0" version="1.0"/>
-</session>

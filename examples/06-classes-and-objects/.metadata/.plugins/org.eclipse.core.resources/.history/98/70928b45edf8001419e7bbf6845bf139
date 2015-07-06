@@ -1,8 +1,0 @@
-package soft.intellect.demo;
-
-public interface Runable {
-
-	public void Walk();
-	public void Run();
-
-}

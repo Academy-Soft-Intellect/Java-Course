@@ -1,3 +1,0 @@
-INDEX VERSION 1.127+C:\Academy\git\Java-Course\examples\10-data-structures\.metadata\.plugins\org.eclipse.jdt.core
-1065832147.index
-3407806193.index

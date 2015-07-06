@@ -1,9 +1,0 @@
-
-public class BigInteger {
-
-	public static void main(String[] args) {
-		BigInteger bigInt = new BigInteger();
-
-	}
-
-}

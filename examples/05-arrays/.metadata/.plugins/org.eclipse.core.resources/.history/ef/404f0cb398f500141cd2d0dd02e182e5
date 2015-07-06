@@ -1,9 +1,0 @@
-
-public class Test {
-	public static void main(String[] args) {
-		int test = Integer.MAX_VALUE;
-		int p = test + 10;
-		System.out.println(p);
-	}
-
-}
