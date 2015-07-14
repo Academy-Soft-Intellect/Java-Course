@@ -4,6 +4,7 @@
 		<item value="//        float sum = 0.1f + 0.1f + 0.1f + 0.1f + 0.1f + 0.1f + 0.1f + 0.1f + 0.1f + 0.1f;" key="selection"/>
 		<list key="findhistory">
 			<item value="//        float sum = 0.1f + 0.1f + 0.1f + 0.1f + 0.1f + 0.1f + 0.1f + 0.1f + 0.1f + 0.1f;"/>
+			<item value="//&#x09;&#x09;  int d;"/>
 		</list>
 	</section>
 </section>

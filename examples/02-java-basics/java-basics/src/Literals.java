@@ -33,7 +33,7 @@
 		  char symbolTwo = '\u0061';
 		  System.out.println(symbolTwo);
 		  
-		  String str = "Peter\'s car!";
-		  System.out.println(str);
+		  String str = "Catt car!\n\n\n";
+		  System.out.print(str);
 	  }
 }

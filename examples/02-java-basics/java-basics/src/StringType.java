@@ -1,7 +1,7 @@
 public class StringType {
 	
     public static void main(String[] args) {
-        String firstName = "Lazar ";
+        String firstName = "Lazar";
         String lastName = "Sestrimski";
         System.out.println("Hello, " + firstName);
 

@@ -42,8 +42,8 @@ public class ArithmeticOperations {
         System.out.print("y++");
         System.out.println(y);
         
-//        float sum = 0.1f + 0.1f + 0.1f + 0.1f + 0.1f + 0.1f + 0.1f + 0.1f + 0.1f + 0.1f;
-//        System.out.print("Sum of 10 times 0.1f = ");
-//        System.out.println(sum);
+        float sum = 0.1f + 0.1f + 0.1f + 0.1f + 0.1f + 0.1f + 0.1f + 0.1f + 0.1f + 0.1f;
+        System.out.print("Sum of 10 times 0.1f = ");
+        System.out.println(sum);
     }
 }
