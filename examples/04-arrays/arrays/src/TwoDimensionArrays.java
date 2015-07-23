@@ -9,6 +9,7 @@ public class TwoDimensionArrays {
 		};
 		for(int row = 0; row < ourArray.length; row++){
 			for(int col = 0; col < ourArray[row].length; col++){
+				
 				System.out.print(ourArray[row][col] + " ");
 			}
 			System.out.println();
