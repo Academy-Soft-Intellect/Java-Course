@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;AccessModifiers&apos; to &apos;Properties&apos;&#x0D;&#x0A;- Original project: &apos;Properties&apos;&#x0D;&#x0A;- Original element: &apos;AccessModifiers&apos;&#x0D;&#x0A;- Renamed element: &apos;Properties&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;AccessModifiers&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{AccessModifiers.java[AccessModifiers" matchStrategy="1" name="Properties" qualified="false" references="true" similarDeclarations="false" stamp="1431472398400" textual="false" version="1.0"/>
+</session>
