@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 3 elements to &apos;VirtualMethods/src&apos;&#x0D;&#x0A;- Original project: &apos;InheritanceSuper&apos;&#x0D;&#x0A;- Destination element: &apos;VirtualMethods/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     Test.java&#x0D;&#x0A;     Animal.java&#x0D;&#x0A;     Dog.java&#x0D;&#x0A;- Update references to refactored element" description="Move compilation units" destination="=VirtualMethods/src" element1="/src&lt;{Test.java" element2="/src&lt;{Animal.java" element3="/src&lt;{Dog.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1431670763378" units="3" version="1.0"/>
+</session>
