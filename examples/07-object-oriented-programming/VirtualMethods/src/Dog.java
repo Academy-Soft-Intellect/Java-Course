@@ -11,9 +11,9 @@ public class Dog extends Animal {
 //		System.out.println("Hello");
 //	}
 	
-	public void SayGoodbye(){
-		System.out.println("Goodbye");
-	}
+//	public void SayGoodbye(){
+//		System.out.println("Goodbye!!!");
+//	}
 
 
 }

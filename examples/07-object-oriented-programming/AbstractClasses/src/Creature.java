@@ -10,5 +10,8 @@ public abstract class Creature {
 		this.age = age;
 	}
 	
-	public abstract void greet();
+	public void greet()
+	{
+		System.out.print("Creature");
+	}
 }

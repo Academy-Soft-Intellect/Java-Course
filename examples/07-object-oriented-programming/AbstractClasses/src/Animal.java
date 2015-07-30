@@ -20,8 +20,8 @@ public class Animal extends Creature {
 		this.height = height;
 	}
 
-	public void greet() {
-		System.out.println("I am na animal and I am " + super.age +	" years old.");
-		System.out.println("My Height is " + this.height);
-	}
+//	public void greet() {
+//		System.out.println("I am na animal and I am " + super.age +	" years old.");
+//		System.out.println("My Height is " + this.height);
+//	}
 }

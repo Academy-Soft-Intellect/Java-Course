@@ -1,7 +1,7 @@
 public class Animal{
 	
 	protected String name;
-	public int age;
+	protected int age;
 	
 	public Animal(){
 		
