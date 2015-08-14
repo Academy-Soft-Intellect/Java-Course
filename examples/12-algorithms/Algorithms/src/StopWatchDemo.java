@@ -7,7 +7,7 @@ public class StopWatchDemo {
 		
 		Random rand = new Random();
 		
-		int count = 20000000;
+		int count = 200000;
 		
 		int numbers[] = new int[count];
 		
@@ -21,7 +21,8 @@ public class StopWatchDemo {
 		
 		long startTime = System.currentTimeMillis();
 		
-		sorter.sort(numbers);
+		SelectionSort.selectionSort(numbers);
+		//sorter.sort(numbers);
 		
 		long endTime = System.currentTimeMillis();
 		
