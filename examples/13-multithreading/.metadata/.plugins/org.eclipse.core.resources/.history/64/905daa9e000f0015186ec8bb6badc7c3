@@ -1,0 +1,43 @@
+class BlockTable{  
+  
+ void printTable(int n){  
+   synchronized(this){//synchronized block  
+     for(int i=1;i<=5;i++){  
+      System.out.println(n*i);  
+      try{  
+       Thread.sleep(400);  
+      }catch(Exception e){System.out.println(e);}  
+     }  
+   }  
+ }//end of the method  
+}  
+
+class MyThread3 extends Thread{  
+	BlockTable table;  
+	MyThread3(BlockTable table){  
+		this.table=table;  
+	}  
+	public void run(){  
+		table.printTable(5);  
+	}  
+  
+}  
+class MyThread4 extends Thread{  
+	BlockTable table;  
+	MyThread4(BlockTable table){  
+		this.table=table;  
+	}  
+	public void run(){  
+		table.printTable(100);  
+	}  
+}  
+  
+public class SynchronizedBlock{  
+	public static void main(String args[]){  
+		MethodTable obj = new MethodTable();
+		MyThread1 t1=new MyThread1(obj);  
+		MyThread2 t2=new MyThread2(obj);  
+		t1.start();  
+		t2.start();  
+	}  
+}  
