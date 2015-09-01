@@ -1,0 +1,11 @@
+public class Academy {
+	
+	public boolean IsJavaPowerful(){
+		return true;
+		
+	}
+	
+
+}
+
+

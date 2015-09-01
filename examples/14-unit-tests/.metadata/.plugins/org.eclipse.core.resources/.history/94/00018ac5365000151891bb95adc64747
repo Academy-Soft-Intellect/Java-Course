@@ -1,0 +1,11 @@
+public class Ninja {
+	
+	public boolean IsJavaPowerful(){
+		return true;
+		
+	}
+	
+
+}
+
+

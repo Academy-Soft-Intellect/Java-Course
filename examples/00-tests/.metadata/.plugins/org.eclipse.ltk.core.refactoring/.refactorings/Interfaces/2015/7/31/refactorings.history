@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename local variable &apos;distrance&apos; in &apos;Walkable.walk(...)&apos; to &apos;distance&apos;&#x0D;&#x0A;- Original project: &apos;Interfaces&apos;&#x0D;&#x0A;- Original element: &apos;Walkable.walk(int).distrance&apos;&#x0D;&#x0A;- Renamed element: &apos;distrance&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;distrance&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{Walkable.java[Walkable~walk~I@distrance!71!83!75!83!I!0!true" name="distance" references="true" stamp="1438105324561" version="1.0"/>
-</session>

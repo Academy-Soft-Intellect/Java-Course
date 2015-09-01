@@ -1,0 +1,14 @@
+
+public class FormattingCode {
+	public static void main(String[] arg)
+	{
+	  int value=010, i=5, w;
+	  switch(value){case 10:w=5;System.out.println(w);break;case 9:i=0;break;
+	          case 8:System.out.println("Soft");break;
+	     default:System.out.println("Academy ");{
+	    	 System.out.println("Lazar");	}
+	     for (int k = 0; k < i; k++, System.out.println(k - 'f'));break;} { System.out.println("Intellect!"); }
+	}
+
+
+}
