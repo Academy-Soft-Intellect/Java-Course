@@ -1,0 +1,89 @@
+import java.awt.EventQueue;
+
+import javax.swing.JDialog;
+import javax.swing.JButton;
+import java.awt.Font;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import javax.swing.JFormattedTextField;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+public class CreateNewItem extends JDialog {
+
+	private Item mainItem;
+	
+	public Item getMainItem(){
+		return mainItem;
+	}
+
+	/**
+	 * Create the dialog.
+	 */
+	public CreateNewItem() {
+		setTitle("CREATE NEW ITEM");
+		setBounds(100, 100, 450, 300);
+		getContentPane().setLayout(null);
+		
+		JButton btnAddNewItem = new JButton("Add New Item");
+		btnAddNewItem.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+			}
+		});
+		btnAddNewItem.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		btnAddNewItem.setBounds(10, 206, 195, 33);
+		getContentPane().add(btnAddNewItem);
+		
+		JLabel lblName = new JLabel("Name:");
+		lblName.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblName.setBounds(28, 23, 129, 26);
+		getContentPane().add(lblName);
+		
+		JLabel lblBarcode = new JLabel("Barcode:");
+		lblBarcode.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblBarcode.setBounds(28, 67, 129, 26);
+		getContentPane().add(lblBarcode);
+		
+		JLabel lblPrice = new JLabel("Price:");
+		lblPrice.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblPrice.setBounds(28, 111, 129, 26);
+		getContentPane().add(lblPrice);
+		
+		JLabel lblCount = new JLabel("Count:");
+		lblCount.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblCount.setBounds(28, 155, 129, 26);
+		getContentPane().add(lblCount);
+		
+		JFormattedTextField formattedTextField = new JFormattedTextField();
+		formattedTextField.setBounds(177, 22, 178, 33);
+		getContentPane().add(formattedTextField);
+		
+		JFormattedTextField formattedBarcodeTextField = new JFormattedTextField("{0,number,#}");
+		formattedBarcodeTextField.setBounds(177, 66, 178, 33);
+		formattedBarcodeTextField.setValue(new Long(0L));
+		getContentPane().add(formattedBarcodeTextField);
+		
+		JFormattedTextField formattedPriceTextField = new JFormattedTextField();
+		formattedPriceTextField.setBounds(177, 110, 178, 33);
+		formattedPriceTextField.setValue(new Double(0d));
+		getContentPane().add(formattedPriceTextField);
+		
+		JFormattedTextField formattedCountTextField = new JFormattedTextField();
+		formattedCountTextField.setBounds(177, 154, 178, 33);
+		formattedCountTextField.setValue(new Integer(0));
+		getContentPane().add(formattedCountTextField);
+	
+		
+		JButton btnCancel = new JButton("Cancel");
+		btnCancel.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				setVisible(false);
+			}
+		});
+		btnCancel.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		btnCancel.setBounds(229, 206, 195, 33);
+		getContentPane().add(btnCancel);
+
+	}
+}

@@ -1,0 +1,42 @@
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+
+public class StorageSystem {
+
+	private JFrame frmStorageSystem;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					StorageSystem window = new StorageSystem();
+					window.frmStorageSystem.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public StorageSystem() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frmStorageSystem = new JFrame();
+		frmStorageSystem.setTitle("STORAGE SYSTEM");
+		frmStorageSystem.setBounds(100, 100, 800, 600);
+		frmStorageSystem.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+
+}

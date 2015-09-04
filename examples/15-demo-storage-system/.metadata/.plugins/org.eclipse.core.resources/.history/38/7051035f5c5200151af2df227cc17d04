@@ -1,0 +1,16 @@
+import java.awt.EventQueue;
+
+import javax.swing.JDialog;
+
+public class CreateNewItem extends JDialog {
+
+
+	/**
+	 * Create the dialog.
+	 */
+	public CreateNewItem() {
+		setBounds(100, 100, 450, 300);
+
+	}
+
+}
