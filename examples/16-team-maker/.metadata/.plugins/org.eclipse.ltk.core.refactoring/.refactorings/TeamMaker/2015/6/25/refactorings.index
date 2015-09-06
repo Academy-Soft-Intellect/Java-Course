@@ -1,0 +1,11 @@
+1434492732851	Rename field '_playersList'
+1434492737452	Rename field '_numberOfTeams'
+1434492744156	Rename method 'set_playersList'
+1434492751327	Rename method 'get_playersList'
+1434492759530	Rename method 'get_numberOfTeams'
+1434492769144	Rename method 'set_numberOfTeams'
+1434559960357	Rename local variable 'now'
+1434642075203	Delete element
+1434642080797	Delete element
+1434642083797	Delete element
+1434642086140	Delete element
