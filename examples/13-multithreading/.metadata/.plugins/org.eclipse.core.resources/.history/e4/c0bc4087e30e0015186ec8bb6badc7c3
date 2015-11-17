@@ -1,9 +1,0 @@
-public class Main {
-	public static void main(String[] args) {
-	Thread t1 = new SleepingThread();
-	Thread t2 = new SleepingThread();
-	t1.start();
-	t2.start();
-	}
-
-}
