@@ -4,11 +4,11 @@ public class Continue {
 		
 		for(int i=0; i <= 15; i++){
 
-			if(i % 2 == 0){
+			if(i % 2 != 0){
 				continue;
 			}
 			
-			System.out.println("Odd number: " + i);
+			System.out.println("Even number: " + i);
 		}	
 	}
 }

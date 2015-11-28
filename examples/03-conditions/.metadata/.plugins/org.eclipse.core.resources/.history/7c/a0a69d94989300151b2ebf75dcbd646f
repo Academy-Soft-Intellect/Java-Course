@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Test {
+	public static void main(String[] args) {
+	
+		Scanner input = new Scanner(System.in);
+		
+		
+		System.out.println("Enter name: ");
+		String aaaaaa = input.nextLine();
+		
+		System.out.println("Enter age: ");
+		byte age = input.nextByte();
+		
+		System.out.println("Enter ENG: ");
+		String eng = input.nextLine();
+		
+		System.out.println("Enter Word: ");
+		String word = input.nextLine();
+		
+	}
+}

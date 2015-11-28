@@ -8,12 +8,7 @@ public class IfElseConstruction {
 
         System.out.println("Please enter an integer:");
         int numInt = input.nextInt();
-        
-        if (numInt % 2 == 0){
-            System.out.println("The number is even!");
-        } else {
-            System.out.println("The number is odd!");
-        }
+       
 
         if(numInt > 0 && numInt <=10){
             System.out.println("The number is in the interval (0;10]");

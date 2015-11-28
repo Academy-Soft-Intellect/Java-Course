@@ -2,17 +2,18 @@ public class Break {
 	
 	public static void main(String[] args) {
 		
-		int number = 3;
-		int divider = 5;
-		int curent_number = 1;
+		int number = 2;
+		int divider = 7;
+		int current_number = 1;
 		
 		do {
-			int result = number * curent_number++;
+			int result = number * current_number;
+			current_number++;
 			
 			if (result % divider == 0) {
 				System.out.println("Least common multiple (LCM): " +
 									 number + " and " + divider + " is " + result);
-				break;
+			//	break;
 			}
 		
 		} while(true);

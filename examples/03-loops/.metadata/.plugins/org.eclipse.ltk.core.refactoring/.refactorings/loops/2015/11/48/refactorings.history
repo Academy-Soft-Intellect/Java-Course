@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;curent_number&apos; in &apos;Break.main(...)&apos; to &apos;current_number&apos;&#x0D;&#x0A;- Original project: &apos;loops&apos;&#x0D;&#x0A;- Original element: &apos;Break.main(String[]).curent_number&apos;&#x0D;&#x0A;- Renamed element: &apos;curent_number&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;curent_number&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{Break.java[Break~main~\[QString;@curent_number!113!134!117!129!I!0!false" name="current_number" references="true" stamp="1448479621977" version="1.0"/>
+</session>

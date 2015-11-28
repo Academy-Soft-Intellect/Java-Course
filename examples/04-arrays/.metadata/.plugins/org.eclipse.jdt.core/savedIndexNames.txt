@@ -1,0 +1,19 @@
+INDEX VERSION 1.127+D:\Soft-Intellect-Academy\Java-Course\Java-Course\examples\04-arrays\.metadata\.plugins\org.eclipse.jdt.core
+1984797805.index
+4135478709.index
+322690031.index
+1642629014.index
+71698844.index
+1256513231.index
+3620173291.index
+4282262597.index
+2255558868.index
+4097853004.index
+4133831525.index
+2921179834.index
+3425653186.index
+3604818565.index
+2410559617.index
+4247270281.index
+3150109421.index
+2689061861.index
