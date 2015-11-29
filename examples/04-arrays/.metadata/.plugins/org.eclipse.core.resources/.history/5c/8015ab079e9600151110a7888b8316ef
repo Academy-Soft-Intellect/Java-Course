@@ -53,7 +53,7 @@ public class FullExample {
 		int[][] matrix1 = new int[5][3];
 		
 		// Добавяне на стойност в масив. 
-		// Попълване на елемент на 3-тия ред с индекс 2 и на 2-рата колона с индекс 1.
+		// Попълване на елемент на 3-тия с индекс 2 и на 2-рата колона с индекс 1.
 		matrix1[2][1] = 8;
 		
 		// Деклариране и инизиализиране на двумерен масив с нули.
@@ -87,7 +87,9 @@ public class FullExample {
 			}
 			System.out.println();
 		}
-		System.out.println();		
+		System.out.println();
+		System.out.println();
+		
 
 	}
 
