@@ -1,0 +1,6 @@
+INDEX VERSION 1.127+D:\Soft-Intellect-Academy\Java-Course\Java-Course\examples\05-methods-and-recursion\.metadata\.plugins\org.eclipse.jdt.core
+4282262597.index
+1984797805.index
+140479820.index
+3150109421.index
+1256513231.index
