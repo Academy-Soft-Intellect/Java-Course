@@ -1,0 +1,7 @@
+INDEX VERSION 1.127+D:\Soft-Intellect-Academy\Java-Course\Java-Course\examples\06-classes-and-objects\.metadata\.plugins\org.eclipse.jdt.core
+1362623544.index
+2107776769.index
+264163336.index
+2100932085.index
+4223731748.index
+389743204.index

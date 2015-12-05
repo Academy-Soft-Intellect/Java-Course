@@ -1,0 +1,19 @@
+public class Car {
+	
+	public static int carsCount = 0;
+	
+	private String brand;
+	private String model;
+	
+	public Car(){		
+		carsCount++;
+	}
+
+	public Car(String brand, String model) {
+		this();
+	}
+
+	public static int getCarsCount() {
+		return carsCount;
+	}
+}

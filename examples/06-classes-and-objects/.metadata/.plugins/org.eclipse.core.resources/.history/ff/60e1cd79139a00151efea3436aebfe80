@@ -1,0 +1,31 @@
+
+public class Properties {
+
+	public static void main(String[] args) {
+		
+		Cat josefine = new Cat("Josefine", "Persian", 2);
+		
+		josefine.sayMiau(true);
+		
+		System.out.println();
+		
+		josefine.sayMiau(false);	
+		
+		System.out.println();
+		System.out.println();
+		
+		Cat harriet = new Cat("Harriet", "Siamese", 5);
+		
+		harriet.sayMiau(true);
+		
+		System.out.println();
+		
+		
+		harriet.setAge(-2);
+		
+		
+		harriet.sayMiau(true);
+		
+	}
+
+}
