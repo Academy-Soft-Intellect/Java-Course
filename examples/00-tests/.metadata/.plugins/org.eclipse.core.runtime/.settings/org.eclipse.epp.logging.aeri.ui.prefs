@@ -1,4 +1,4 @@
-action=IGNORE
+action=ASK
 eclipse.preferences.version=1
 problemsZipEtag="850323-52615d8526340"
-rememberSendAction=RESTART
+rememberSendAction=NONE

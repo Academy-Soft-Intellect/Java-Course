@@ -1,0 +1,14 @@
+public class Test {
+	
+	public static void main(String[] args) {
+		Cat c = new Cat();
+		c.sleep();
+		c.wakeup();
+		c.walk();
+		c.run();
+		
+		Dog d = new Dog();
+		d
+		
+	}
+}

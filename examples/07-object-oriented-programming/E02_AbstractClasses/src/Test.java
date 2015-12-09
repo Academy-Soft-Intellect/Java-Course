@@ -1,0 +1,15 @@
+public class Test {
+	
+	public static void main(String[] args) {
+		
+		Human john = new Human("John", 24);
+		john.greet();
+		
+		System.out.println();
+		
+		Animal dog = new Animal(2, 1f);
+		dog.greet();
+		
+		//Creature creature = new Creature();
+	}
+}
