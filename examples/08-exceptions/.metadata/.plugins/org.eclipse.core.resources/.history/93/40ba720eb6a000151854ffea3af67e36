@@ -1,0 +1,19 @@
+package Exceptions;
+
+public class E01_ExceptionBasic {
+	
+	public static void main(String[] args) {
+		try {
+			
+			int a = 5 / 0;
+			
+			System.out.println(a);
+
+		} catch (Exception exception) {
+			System.out.println("The exception is caught! " + exception.getMessage());
+		} finally {
+			System.out.println("This block will be always executed!");
+		}
+	}
+	
+}	
