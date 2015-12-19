@@ -1,0 +1,60 @@
+package lists;
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class E02_1_ArrayLists {
+
+	public static void main(String[] args) {
+		
+		ArrayList<String> people = new ArrayList<String>();
+		
+		people.add("Ivan");
+		people.add("Konstantin");
+		people.add("Atanas");
+		people.add("Todor");
+		
+		PrintPeople(people);
+		
+		people.add("Georgi"); 
+		
+		PrintPeople(people);
+		
+		people.set(2, "Anton");
+		
+		PrintPeople(people);
+		
+		people.add(3, "Peter"); 
+		
+		PrintPeople(people);
+		
+		people.remove(0);
+		
+		PrintPeople(people);
+		
+		people.remove(1);
+		
+		PrintPeople(people);
+		
+		people.remove("Georgi");
+		
+		PrintPeople(people);
+		
+		people.addAll(Arrays.asList("Teodora", "Martin")); 
+		
+		PrintPeople(people);
+		
+		String[] twoMorePeople = new String[]{"Hristo", "Stanislav"};		
+		people.addAll(2, Arrays.asList(twoMorePeople));
+		
+		PrintPeople(people);
+			
+	}
+
+	private static void PrintPeople(ArrayList<String> people) {
+		for(int i = 0; i < people.size(); i++){
+			System.out.print(people.get(i) + " ");
+		}
+		System.out.println();
+	}
+
+}

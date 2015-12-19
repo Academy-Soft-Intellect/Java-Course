@@ -1,0 +1,15 @@
+1450482350777	Rename type 'ArraysSorting'
+1450482879872	Rename type 'ArrayLists'
+1450482901833	Rename type 'IntLists'
+1450482917868	Rename type 'ArrayToListAndViceVersa'
+1450483133162	Rename type 'Sets'
+1450483212297	Rename type 'HashMaps'
+1450483273240	Rename type 'TreeMaps'
+1450509608326	Extract method 'PrintPeople'
+1450509701051	Rename local variable 'test'
+1450510907833	Extract method 'printPeople'
+1450510923439	Rename method 'PrintPeople'
+1450510950758	Extract method 'printPeople'
+1450512225503	Rename type 'SetsHashCode'
+1450512354326	Copy compilation units
+1450512361152	Delete elements
