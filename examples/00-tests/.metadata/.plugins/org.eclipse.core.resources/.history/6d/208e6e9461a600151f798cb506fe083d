@@ -1,0 +1,17 @@
+
+public class Recursion {
+
+	public static void main(String[] args) {
+		print(10);
+
+	}
+	public static void print(int n){
+		if (n == 20000 + 1){
+			return;
+		}
+		System.out.println(n);
+		n++;
+		print(n);
+	}
+
+}

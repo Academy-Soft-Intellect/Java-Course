@@ -1,0 +1,24 @@
+1431906009159	Rename local variable 'gerogi'
+1431906095796	Rename local variable 'maria'
+1431906313618	Rename local variable 'personName'
+1431906404103	Move compilation units
+1431906734623	Move compilation unit
+1431906902170	Rename local variable 'refComparison'
+1431906944309	Rename local variable 'valueComparison'
+1431907307738	Rename local variable 'secondOne'
+1431907312753	Rename local variable 'secondTwo'
+1431907317731	Rename local variable 'secondThree'
+1431907406672	Rename local variable 'secondWordOne'
+1431907413184	Rename local variable 'secondWordTwo'
+1431907420725	Rename local variable 'secondWordThree'
+1431908053327	Rename type 'StringConcatenationi'
+1431908161334	Move compilation unit
+1431908395211	Move compilation unit
+1431908398015	Move compilation unit
+1431908403410	Move compilation unit
+1431908424828	Move compilation unit
+1431908467080	Move compilation unit
+1431908473967	Delete element
+1432276642903	Rename local variable 'start'
+1432276647309	Rename local variable 'end'
+1432276680589	Rename local variable 'str1'

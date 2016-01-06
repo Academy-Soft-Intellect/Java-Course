@@ -25,10 +25,10 @@ public class Employee {
 		this.lastName = lastName;
 	}
 
-	@Override
-	public int hashCode() {
-		return (this.firstName + this.lastName).hashCode();
-	}
+//	@Override
+//	public int hashCode() {
+//		return (this.firstName + this.lastName).hashCode();
+//	}
 
 	@Override
 	public boolean equals(Object o) {

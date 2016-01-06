@@ -1,0 +1,26 @@
+package tostring;
+
+public class E02_MethodToString {
+
+	public static void main(String[] args) {
+		
+		Person lazar = new Person("Lazar", "Sestrimski");
+		
+		String myName = lazar.toString();
+		
+		System.out.println(myName);
+		
+		String greeting = "My name is " + lazar + "!";
+		
+		System.out.println(greeting);
+		
+		Person emma = new Person("Emma", "Watson");
+		
+		System.out.println(emma);
+		
+		greeting = String.format("Her name is %s!", emma);
+		
+		System.out.println(greeting);
+
+	}
+}

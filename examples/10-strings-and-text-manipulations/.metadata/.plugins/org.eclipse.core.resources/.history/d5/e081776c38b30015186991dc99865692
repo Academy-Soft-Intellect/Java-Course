@@ -1,0 +1,21 @@
+package formatting;
+
+public class Formatting {
+	public static void main(String[] args) {
+		System.out.printf("Integer : %d\n",15);
+		System.out.printf("Hex Integer : %x\n\n",15);
+			
+		System.out.printf("Floating point number with 3 decimal digits: %.3f\n", 1.21312939123);
+		System.out.printf("Floating point number with 8 decimal digits: %.8f\n\n", 1.21312939123);
+
+		System.out.printf("String: %s, integer: %d, float: %.6f\n\n", "Hello World", 89, 9.231435);
+		
+		System.out.printf("%-12s%-12s%s\n", "Column 1", "Column 2", "Column3");
+		System.out.printf("%-12d%-12d%07d\n", 15, 12, 5);
+		System.out.printf("%-12.5s%s\n", "Hello World", "World");
+		System.out.printf("%-12.5f%-12.5f%.20f\n\n", 12.23429837482, 15.13, 9.10212023134);
+		//System.out.printf("%s%s\n", "Java World");
+		System.out.printf("%s\n", "Java World", "Programming");
+
+	}
+}

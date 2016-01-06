@@ -1,0 +1,26 @@
+package test;
+
+import java.util.ArrayList;
+
+public class Test {
+
+	public static void main(String[] args) {
+		ArrayList<Company> list = new ArrayList<Company>();
+		list.add(new Company("HP", 2000));
+		list.add(new Company("Ubisoft", 10000));
+		list.add(new Company("BPB", 3000));
+		
+		int tempIndex = 0;
+		int tempCount = 0;
+		
+		for (int i = 0; i < list.size() - 1; i++) {
+			if(list.get(i).getCount() > list.get(i + 1).getCount()){
+				tempIndex = i;
+				tempCount = list.get(i).getCount();
+			}
+		}
+
+ 
+	}
+
+}

@@ -1,0 +1,17 @@
+
+public class Recursion {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	public void print(int n){
+		if (n == 10000){
+			return;
+		}
+		System.out.println(n);
+		n++;
+		print(n);
+	}
+
+}

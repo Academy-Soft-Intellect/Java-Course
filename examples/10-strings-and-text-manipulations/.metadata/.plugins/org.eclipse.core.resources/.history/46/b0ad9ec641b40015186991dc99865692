@@ -1,0 +1,44 @@
+package formatting;
+
+import java.util.ArrayList;
+
+public class Formatting {
+	public static void main(String[] args) {
+		System.out.printf("Integer : %d\n",15);
+		System.out.printf("Hex Integer : %x\n\n",15);
+			
+		System.out.printf("Floating point number with 3 decimal digits: %.3f\n", 1.21312939123);
+		System.out.printf("Floating point number with 8 decimal digits: %.8f\n\n", 1.21312939123);
+
+		System.out.printf("String: %s, integer: %d, float: %.6f\n\n", "Hello World", 89, 9.231435);
+		
+		System.out.printf("%-12s%-12s%s\n", "Column 1", "Column 2", "Column 3");
+		System.out.printf("%-12d%-12d%07d\n", 15, 12, 5);
+		System.out.printf("%-12.5s%s\n", "Hello World", "World");
+		System.out.printf("%-12.5f%-12.5f%.20f\n\n", 12.23429837482, 15.13, 9.10212023134);
+		
+		System.out.printf("%12s%12s%12s\n", "Column 1", "Column 2", "Column 3");
+		System.out.printf("%12d%12d%12d\n\n", 15, 12, 5);
+		
+		//System.out.printf("%s%s\n", "Java World"); //Exception
+		System.out.printf("%s\n\n", "Java World", "Programming"); //Only one argument will be displayed
+		
+		System.out.printf("%8.3f\n\n", 15.11111);
+		
+		 String s = String.format("%-12.5f%-12.5f%.20f\n\n", 12.23429837482, 15.13, 9.10212023134);
+		 System.out.println(s);
+		 
+		 ArrayList<String> list = new ArrayList<String>();
+		 list.add("Ivan");
+		 list.add("Lazar");
+		 list.add("Georgi");
+		 
+		 ArrayList<String> list1 = new ArrayList<String>();
+		 list1.add("Lazar");
+		 list1.add("Georgi");
+		list.removeAll(list1);
+		 System.out.println(list);
+		
+
+	}
+}

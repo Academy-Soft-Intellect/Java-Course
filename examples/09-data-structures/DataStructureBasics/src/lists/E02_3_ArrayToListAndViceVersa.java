@@ -26,6 +26,7 @@ public class E02_3_ArrayToListAndViceVersa {
 				"Ivelina"};
 		
 		List<String> listFromArray = Arrays.asList(array);
+
 		
 		printPeople(listFromArray);
 			

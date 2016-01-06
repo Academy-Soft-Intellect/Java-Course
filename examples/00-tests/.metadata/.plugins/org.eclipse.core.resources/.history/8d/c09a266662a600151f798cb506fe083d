@@ -1,0 +1,21 @@
+
+public class Recursion {
+
+	public static void main(String[] args) {
+		print(10);
+		System.out.println(sum);
+
+	}
+	public static int sum = 0;
+	
+	public static void print(int n){
+		if (n == 50 + 1){
+			return;
+		}
+		sum = sum + n;
+		System.out.println(n);
+		n++;
+		print(n);
+	}
+
+}
