@@ -15,9 +15,6 @@ public class E08_MoreStringMethods {
 		System.out.println(modified.toLowerCase());
 		
 		String something = "    Something    Test   ";
-		Scanner s = new Scanner(something);
-		Scanner p = s.useDelimiter(" ");
-		System.out.println(p.next());
 		
 		System.out.println(something.trim());
 
