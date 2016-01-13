@@ -13,8 +13,8 @@ public class E10_WritingFIles {
 
 		try {
 	
-			FileWriter fileStream = new FileWriter(filePath);
-//			FileWriter fileStream = new FileWriter(filePath, true);
+//			FileWriter fileStream = new FileWriter(filePath);
+			FileWriter fileStream = new FileWriter(filePath, true);
 			
 			BufferedWriter writer = new BufferedWriter(fileStream);
 			

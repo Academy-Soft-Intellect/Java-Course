@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.internal.QuickAccess">
+		<item value="759" key="dialogHeight"/>
+		<item value="1280" key="dialogWidth"/>
+		<list key="textEntries">
+		</list>
+		<list key="orderedElements">
+		</list>
+		<list key="orderedProviders">
+		</list>
+		<list key="textArray">
+		</list>
+	</section>
+	<section name="org.eclipse.ui.internal.dialogs.WorkbenchEditorsDialog">
+		<item value="0" key="sort"/>
+		<item value="false" key="allPersp"/>
+		<list key="columns">
+			<item value="318"/>
+			<item value="638"/>
+		</list>
+		<list key="bounds">
+			<item value="497"/>
+			<item value="79"/>
+			<item value="1006"/>
+			<item value="693"/>
+		</list>
+	</section>
+</section>

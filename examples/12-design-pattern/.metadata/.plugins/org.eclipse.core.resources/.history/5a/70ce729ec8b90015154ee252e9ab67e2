@@ -1,0 +1,89 @@
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+
+public class Test {
+	public static void main(String[] args) {
+
+		// קועו פאיכ
+		String readFilePath = "../Read_file_Homework_10_Tasks_6_7/Read_file";
+
+		// ןטרו פאיכ
+		String filePath = "../Write_file_Homework_10_Tasks_6_7/Write_file.txt";
+
+		try {
+			FileWriter fileStream = new FileWriter(filePath);
+			BufferedWriter writer = new BufferedWriter(fileStream);
+
+			FileReader fileReader = new FileReader(readFilePath);
+			BufferedReader bufferedReader = new BufferedReader(fileReader);
+
+			while (bufferedReader.ready()) {
+				String line = bufferedReader.readLine();
+				
+				if (line.contains("!")) {
+					line = line.replace("!", " ");
+					System.out.println();
+				}
+
+				System.out.println();
+
+				if (line.contains(",")) {
+					line = line.replace(",", " ");
+				}
+
+				System.out.println();
+
+				if (line.contains("?")) {
+					line = line.replace("?", " ");
+
+				}
+
+				writer.write(line.toString());
+				
+				System.out.println(line);
+			}
+
+			bufferedReader.close();
+
+			
+			writer.newLine();
+
+			writer.close();
+
+		} catch (Exception e) {
+			System.out.println("Error while writing a file.");
+			System.out.println(e.getMessage());
+			System.exit(0);
+		}
+
+		System.out.println();
+
+		System.out.println("The file is success.");
+
+	}
+
+	// קועו פאיכ
+	public static void readFile(String path) {
+		try {
+
+			FileReader fileReader = new FileReader(path);
+
+			BufferedReader bufferedReader = new BufferedReader(fileReader);
+
+			while (bufferedReader.ready()) {
+				String line = bufferedReader.readLine();
+				System.out.println(line);
+			}
+
+			bufferedReader.close();
+
+		} catch (Exception e) {
+			System.out.println("Error while reading a file.");
+			System.out.println(e.getMessage());
+			System.exit(0);
+		}
+
+	}
+}

@@ -14,7 +14,7 @@ public class E07_StringSplit {
 		
 		System.out.println();
 		
-		String[] partsClean = sentance.split(" |, |!");
+		String[] partsClean = sentance.split(".|!|?");
 		
 		for (String part : partsClean) {
 			System.out.println(part);

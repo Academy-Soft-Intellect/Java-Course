@@ -9,10 +9,10 @@ public class Test {
 			TreeNode<String> node1 = root.addChild("node1");
 			TreeNode<String> node2 = root.addChild("node2");
 		    {
-		    	TreeNode<String> node20 = node2.addChild(null);
+		    	TreeNode<String> node20 = node2.addChild("node20");
 		    	TreeNode<String> node21 = node2.addChild("node21");
 		        {
-		        	TreeNode<String> node210 = node20.addChild("node210");
+		        	TreeNode<String> node201 = node20.addChild("node201");
 		        }
 		    }
 		}

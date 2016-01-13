@@ -1,0 +1,30 @@
+import java.util.Stack;
+
+public class E01_StackUsage {
+
+	public static void main(String[] args) {
+		
+		Stack<String> myStack = new Stack<String>();
+		
+		myStack.push("One");
+		
+		myStack.push("Two");
+		
+		myStack.push("Three");
+		
+		myStack.push("Four");
+		
+		//System.out.println(myStack.peek());
+		
+		System.out.println();
+		
+		while(!myStack.isEmpty()){
+			
+			String current = myStack.pop();
+			
+			System.out.println(current);
+		}
+		
+
+	}
+}

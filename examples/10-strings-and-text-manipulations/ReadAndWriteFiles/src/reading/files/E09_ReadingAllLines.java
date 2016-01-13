@@ -10,8 +10,8 @@ public class E09_ReadingAllLines {
 
 	public static void main(String[] args) {
 		
-//		readAllLines("../files/programming.txt");
-		readAllLines("..\\files\\programming.txt");
+		readAllLines("../files/programming.txt");
+//		readAllLines("..\\files\\programming.txt");
 
 	}
 	

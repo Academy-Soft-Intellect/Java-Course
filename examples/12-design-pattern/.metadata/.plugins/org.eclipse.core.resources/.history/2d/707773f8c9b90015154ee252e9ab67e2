@@ -1,0 +1,53 @@
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+
+public class Test {
+	public static void main(String[] args) {
+
+		String readFilePath = "../Read_file_Homework_10_Tasks_6_7/Read_file";
+
+		String filePathOddLines = "../Write_file_Homework_10_Tasks_6_7/Write_file_OddLines.txt";
+		String filePathEvenLines = "../Write_file_Homework_10_Tasks_6_7/Write_file_EvenLines.txt";
+
+		try {
+
+			FileWriter fileStream1 = new FileWriter(filePathOddLines);
+			BufferedWriter writer1 = new BufferedWriter(fileStream1);
+
+			FileWriter fileStream2 = new FileWriter(filePathEvenLines);
+			BufferedWriter writer2 = new BufferedWriter(fileStream2);
+
+			FileReader fileReader = new FileReader(readFilePath);
+			BufferedReader bufferedReader = new BufferedReader(fileReader);
+
+			int number = 0;
+
+			while (bufferedReader.ready()) {
+
+				String line = bufferedReader.readLine();
+				if (number % 2 == 0) {
+					writer1.write(line.toString());
+				} else {
+					writer2.write(line.toString());
+				}
+				number++;
+
+			}
+
+			bufferedReader.close();
+
+			writer1.close();
+			writer2.close();
+
+		} catch (Exception e) {
+			System.out.println("Error while writing a file.");
+			System.out.println(e.getMessage());
+			System.exit(0);
+		}
+
+		System.out.println("The file is success.");
+
+	}
+}

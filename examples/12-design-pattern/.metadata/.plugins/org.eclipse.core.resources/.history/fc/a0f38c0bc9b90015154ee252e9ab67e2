@@ -1,0 +1,64 @@
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+
+public class Test {
+	 public static void main(String[] args) {
+	        
+	        String readFilePath = "../Read_file_Homework_10_Tasks_6_7/Read_file";
+
+	        String filePathOddLines = "../Write_file_Homework_10_Tasks_6_7/Write_file_OddLines.txt";
+	        String filePathEvenLines = "../Write_file_Homework_10_Tasks_6_7/Write_file_EvenLines.txt";
+	        
+	        try {
+	            
+	            FileWriter fileStream1 = new FileWriter(filePathOddLines);	            
+	            BufferedWriter writer1 = new BufferedWriter(fileStream1);
+	            
+	            FileWriter fileStream2 = new FileWriter(filePathEvenLines);	            
+	            BufferedWriter writer2 = new BufferedWriter(fileStream2);
+	            
+	            FileReader fileReader = new FileReader(readFilePath);
+	            BufferedReader bufferedReader = new BufferedReader(fileReader);
+	            
+	            int number = 0;
+	            
+	            while (bufferedReader.ready()) {
+	                
+	                String line = bufferedReader.readLine();
+	            
+	                System.out.println(line);
+	            }
+
+	            bufferedReader.close();
+
+	            
+	            
+	            writer.write(number.toString());
+	            writer.newLine();
+	        
+	            writer.close();
+	            
+	        } catch (Exception e) {
+	            System.out.println("Error while writing a file.");
+	            System.out.println(e.getMessage());
+	            System.exit(0);
+	        }
+	        
+	        System.out.println("The file is success.");
+	        
+	    }
+	       // קועו פאיכ
+	        public static void readFile(String path) {
+	        try {
+
+	           
+	        } catch (Exception e) {
+	            System.out.println("Error while reading a file.");
+	            System.out.println(e.getMessage());
+	            System.exit(0);
+	        }
+
+	    }	
+}
