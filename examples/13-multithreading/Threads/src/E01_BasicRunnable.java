@@ -1,0 +1,11 @@
+public class E01_BasicRunnable implements Runnable {
+	public void run() {
+		System.out.println("thread is running...");
+	}
+
+	public static void main(String args[]) {
+		E01_BasicRunnable m1 = new E01_BasicRunnable();
+		Thread t1 = new Thread(m1);
+		t1.start();
+	}
+}
