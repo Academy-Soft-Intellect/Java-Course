@@ -1,0 +1,98 @@
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JButton;
+import java.awt.Font;
+import java.util.Locale;
+
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.ListSelectionModel;
+import javax.swing.table.DefaultTableModel;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+public class StorageSystem {
+
+	private JFrame frmSystemStorage;
+	private JTable table;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					StorageSystem window = new StorageSystem();
+					window.frmSystemStorage.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public StorageSystem() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frmSystemStorage = new JFrame();
+		frmSystemStorage.setTitle("SYSTEM STORAGE");
+		frmSystemStorage.setBounds(100, 100, 1000, 600);
+		frmSystemStorage.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmSystemStorage.getContentPane().setLayout(null);
+		
+		JButton btnCreateNewItem = new JButton("Create New Item");
+		btnCreateNewItem.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				CreateNewItem dialog = new CreateNewItem();
+				dialog.setModal(false);
+				dialog.setVisible(true);
+			}
+		});
+		btnCreateNewItem.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		btnCreateNewItem.setBounds(10, 515, 181, 35);
+		frmSystemStorage.getContentPane().add(btnCreateNewItem);
+		
+		JButton btnEditItem = new JButton("Edit Item");
+		btnEditItem.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		btnEditItem.setBounds(200, 515, 181, 35);
+		frmSystemStorage.getContentPane().add(btnEditItem);
+		
+		JButton btnDeleteItem = new JButton("Delete Item");
+		btnDeleteItem.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		btnDeleteItem.setBounds(391, 515, 181, 35);
+		frmSystemStorage.getContentPane().add(btnDeleteItem);
+		
+		JButton btnImport = new JButton("Import");
+		btnImport.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		btnImport.setBounds(582, 515, 181, 35);
+		frmSystemStorage.getContentPane().add(btnImport);
+		
+		JButton btnExport = new JButton("Export");
+		btnExport.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		btnExport.setBounds(773, 515, 181, 35);
+		frmSystemStorage.getContentPane().add(btnExport);
+		
+		Object[][] rowData = new Object[0][5];
+		Object[] columnNames = { "Name", "Barcode", "Price", "Count", "Total Price" };
+		
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setBounds(10, 11, 944, 491);
+		frmSystemStorage.getContentPane().add(scrollPane);
+		
+		table = new JTable(new DefaultTableModel(rowData, columnNames));
+		table.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+		scrollPane.setViewportView(table);
+	}
+}

@@ -1,0 +1,8 @@
+
+public class Item {
+	
+	private String name;
+	private long barcode;
+	private double price;
+
+}

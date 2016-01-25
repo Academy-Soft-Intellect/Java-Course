@@ -1,0 +1,79 @@
+import java.awt.EventQueue;
+
+import javax.swing.JDialog;
+import javax.swing.JButton;
+import java.awt.Font;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import javax.swing.JFormattedTextField;
+
+public class CreateNewItem extends JDialog {
+
+	/**
+	 * Create the dialog.
+	 */
+	public CreateNewItem() {
+		setTitle("CREATE NEW ITEM");
+		setBounds(100, 100, 450, 434);
+		getContentPane().setLayout(null);
+		
+		JButton btnCreateNewItem = new JButton("Create New Item");
+		btnCreateNewItem.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		btnCreateNewItem.setBounds(10, 351, 177, 33);
+		getContentPane().add(btnCreateNewItem);
+		
+		JButton btnCancel = new JButton("Cancel");
+		btnCancel.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				setVisible(false);
+			}
+		});
+		
+		btnCancel.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		btnCancel.setBounds(227, 351, 177, 33);
+		getContentPane().add(btnCancel);
+		
+		JLabel lblName = new JLabel("Name:");
+		lblName.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblName.setBounds(38, 49, 82, 33);
+		getContentPane().add(lblName);
+		
+		JFormattedTextField formattedNameTextField = new JFormattedTextField();
+		formattedNameTextField.setBounds(138, 51, 214, 33);
+		getContentPane().add(formattedNameTextField);
+		
+		JFormattedTextField formattedBarcodeTextField = new JFormattedTextField();
+		formattedBarcodeTextField.setBounds(138, 107, 214, 33);
+		getContentPane().add(formattedBarcodeTextField);
+		
+		JFormattedTextField formattedPriceTextField = new JFormattedTextField();
+		formattedPriceTextField.setBounds(138, 167, 214, 33);
+		getContentPane().add(formattedPriceTextField);
+		
+		JFormattedTextField formattedCountTextField = new JFormattedTextField();
+		formattedCountTextField.setBounds(138, 225, 214, 33);
+		getContentPane().add(formattedCountTextField)
+		
+		JLabel lblBarcode = new JLabel("Barcode:");
+		lblBarcode.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblBarcode.setBounds(38, 105, 82, 33);
+		getContentPane().add(lblBarcode);
+		
+
+		
+		JLabel lblPrice = new JLabel("Price:");
+		lblPrice.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblPrice.setBounds(38, 165, 82, 33);
+		getContentPane().add(lblPrice);
+		
+;
+		
+		JLabel lblCount = new JLabel("Count:");
+		lblCount.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblCount.setBounds(38, 223, 82, 33);
+		getContentPane().add(lblCount);
+
+	}
+}

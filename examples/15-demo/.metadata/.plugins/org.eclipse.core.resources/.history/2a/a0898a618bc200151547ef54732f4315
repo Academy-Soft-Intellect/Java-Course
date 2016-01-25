@@ -1,0 +1,36 @@
+import java.awt.EventQueue;
+
+import javax.swing.JDialog;
+import javax.swing.JButton;
+import java.awt.Font;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+public class CreateNewItem extends JDialog {
+
+	/**
+	 * Create the dialog.
+	 */
+	public CreateNewItem() {
+		setTitle("CREATE NEW ITEM");
+		setBounds(100, 100, 450, 300);
+		getContentPane().setLayout(null);
+		
+		JButton btnCreateNewItem = new JButton("Create New Item");
+		btnCreateNewItem.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		btnCreateNewItem.setBounds(10, 217, 177, 33);
+		getContentPane().add(btnCreateNewItem);
+		
+		JButton btnCancel = new JButton("Cancel");
+		btnCancel.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				setVisible(false);
+			}
+		});
+		btnCancel.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		btnCancel.setBounds(235, 217, 177, 33);
+		getContentPane().add(btnCancel);
+
+	}
+
+}

@@ -1,0 +1,204 @@
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+import javax.swing.JButton;
+import javax.swing.JFileChooser;
+
+import java.awt.Font;
+import java.util.Locale;
+
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.ListSelectionModel;
+import javax.swing.filechooser.FileNameExtensionFilter;
+import javax.swing.table.DefaultTableModel;
+import java.awt.event.ActionListener;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.awt.event.ActionEvent;
+
+public class StorageSystem {
+
+	private JFrame frmSystemStorage;
+	private JTable table;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					StorageSystem window = new StorageSystem();
+					window.frmSystemStorage.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public StorageSystem() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frmSystemStorage = new JFrame();
+		frmSystemStorage.setTitle("SYSTEM STORAGE");
+		frmSystemStorage.setBounds(100, 100, 1000, 600);
+		frmSystemStorage.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmSystemStorage.getContentPane().setLayout(null);
+		
+		JButton btnCreateNewItem = new JButton("Create New Item");
+		btnCreateNewItem.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				CreateNewItem dialog = new CreateNewItem();
+				dialog.setModal(true);
+				dialog.setVisible(true);
+				Item item = dialog.getItem();
+				if (item != null) {
+					DefaultTableModel model = (DefaultTableModel) table.getModel();
+					
+					model.addRow(new Object[] { item.getName(), item.getBarcode(),
+							item.getPrice(), item.getCount(), item.getTotalPrice() });
+				} 
+			}
+		});
+		btnCreateNewItem.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		btnCreateNewItem.setBounds(10, 515, 181, 35);
+		frmSystemStorage.getContentPane().add(btnCreateNewItem);
+		
+		JButton btnEditItem = new JButton("Edit Item");
+		btnEditItem.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			
+				 int[] selectedRow = table.getSelectedRows();
+				 
+				 if (selectedRow.length == 1){
+					String name = (String) table.getValueAt(selectedRow[0], 0);
+					long barcode = (long) table.getValueAt(selectedRow[0], 1);
+					double price = (double) table.getValueAt(selectedRow[0], 2);
+					int count = (int) table.getValueAt(selectedRow[0], 3);
+					
+					Item item = new Item(name, barcode, price, count);
+					EditItem dialog = new EditItem(item);
+					
+					dialog.setModal(true);
+					dialog.setVisible(true);
+					
+					item = dialog.getItem();
+					
+					if(item != null){
+					
+						table.setValueAt(item.getName(), selectedRow[0], 0);
+						table.setValueAt(item.getBarcode(), selectedRow[0], 1);
+						table.setValueAt(item.getPrice(), selectedRow[0], 2);
+						table.setValueAt(item.getCount(), selectedRow[0], 3);
+						table.setValueAt(item.getTotalPrice(), selectedRow[0], 4);
+					}
+
+				 }
+				
+			
+			}
+		});
+		btnEditItem.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		btnEditItem.setBounds(200, 515, 181, 35);
+		frmSystemStorage.getContentPane().add(btnEditItem);
+		
+		JButton btnDeleteItem = new JButton("Delete Item");
+		btnDeleteItem.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				 int selectedRow = table.getSelectedRow();
+				 DefaultTableModel model = (DefaultTableModel)table.getModel();
+				 model.removeRow(selectedRow);
+			}
+		});
+		btnDeleteItem.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		btnDeleteItem.setBounds(391, 515, 181, 35);
+		frmSystemStorage.getContentPane().add(btnDeleteItem);
+		
+		JButton btnImport = new JButton("Import");
+		btnImport.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		btnImport.setBounds(582, 515, 181, 35);
+		frmSystemStorage.getContentPane().add(btnImport);
+		
+		JButton btnExport = new JButton("Export");
+		btnExport.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+			}
+		});
+		btnExport.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		btnExport.setBounds(773, 515, 181, 35);
+		frmSystemStorage.getContentPane().add(btnExport);
+		
+		Object[][] rowData = new Object[0][5];
+		Object[] columnNames = { "Name", "Barcode", "Price", "Count", "Total Price" };
+		
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setBounds(10, 11, 944, 491);
+		frmSystemStorage.getContentPane().add(scrollPane);
+		
+		table = new JTable(new DefaultTableModel(rowData, columnNames));
+		table.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+		scrollPane.setViewportView(table);
+	}
+	
+	
+	public void saveFile(){
+		try {
+			JFileChooser fileChooser = new JFileChooser();
+			fileChooser.setFileFilter(new FileNameExtensionFilter("Storage System File", "ssf"));
+			fileChooser.showDialog(null, "Choose...");
+			
+			File file = fileChooser.getSelectedFile();
+			if (file == null){
+				return;
+			}
+			String path = file.getPath();
+			if (path == null){
+				return;
+			}
+			path = path.endsWith(".ssf") ? path : path + ".ssf";
+			
+			// (expression = true/false) ? trueValue : falseValue
+			
+			FileWriter fileStream = new FileWriter(path);
+			BufferedWriter writer = new BufferedWriter(fileStream);
+
+			
+			ArrayList<String> list = new ArrayList<String>();
+
+	        int rowCount = table.getRowCount();
+	        		        
+	        for (int i = 0; i < rowCount; i++) {
+	        		String line = String.format("%s;%s;%s;%s", table.getValueAt(i, 0),
+					        								   table.getValueAt(i, 1), 
+					        								   table.getValueAt(i, 2),
+					        								   table.getValueAt(i, 3));
+			        list.add(line);
+	        }
+			for (String line : list) {
+				writer.append(line);
+				writer.newLine();
+			}
+			
+			writer.close();
+			
+		} catch (Exception ex) {
+			JOptionPane.showMessageDialog(null, "Error while saving file!");
+		}
+		JOptionPane.showMessageDialog(null, "Successfully saved file!");
+	}	
+}

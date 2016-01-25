@@ -1,0 +1,15 @@
+import java.awt.EventQueue;
+
+import javax.swing.JDialog;
+
+public class EditItem extends JDialog {
+
+	/**
+	 * Create the dialog.
+	 */
+	public EditItem() {
+		setBounds(100, 100, 450, 300);
+
+	}
+
+}
