@@ -189,17 +189,19 @@
                 <children xsi:type="advanced:Placeholder" xmi:id="_iMu9zBRuEeWDAcwd_f8OIw" elementId="org.eclipse.egit.ui.RepositoriesView" toBeRendered="false" ref="_iMtvoBRuEeWDAcwd_f8OIw"/>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_iMu9zRRuEeWDAcwd_f8OIw" containerData="7500" selectedElement="_iMu9zhRuEeWDAcwd_f8OIw">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_iMu9zRRuEeWDAcwd_f8OIw" containerData="7500" selectedElement="_iMu91xRuEeWDAcwd_f8OIw">
               <children xsi:type="basic:PartSashContainer" xmi:id="_iMu9zhRuEeWDAcwd_f8OIw" containerData="5649" selectedElement="_iMu9zxRuEeWDAcwd_f8OIw" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_iMu9zxRuEeWDAcwd_f8OIw" elementId="org.eclipse.ui.editorss" containerData="7500" ref="_csH04BRuEeWDAcwd_f8OIw"/>
-                <children xsi:type="basic:PartSashContainer" xmi:id="_iMu90BRuEeWDAcwd_f8OIw" containerData="2500">
-                  <children xsi:type="basic:PartStack" xmi:id="_iMu90RRuEeWDAcwd_f8OIw" elementId="org.eclipse.mylyn.tasks.ui.views.tasksMStack" containerData="5000" selectedElement="_iMu90hRuEeWDAcwd_f8OIw">
+                <children xsi:type="basic:PartSashContainer" xmi:id="_iMu90BRuEeWDAcwd_f8OIw" visible="false" containerData="2500" selectedElement="_iMu90xRuEeWDAcwd_f8OIw">
+                  <children xsi:type="basic:PartStack" xmi:id="_iMu90RRuEeWDAcwd_f8OIw" elementId="org.eclipse.mylyn.tasks.ui.views.tasksMStack" visible="false" containerData="5000" selectedElement="_iMu90hRuEeWDAcwd_f8OIw">
                     <tags>newtablook</tags>
+                    <tags>Minimized</tags>
                     <children xsi:type="advanced:Placeholder" xmi:id="_iMu90hRuEeWDAcwd_f8OIw" elementId="org.eclipse.mylyn.tasks.ui.views.tasks" ref="_ctBMzRRuEeWDAcwd_f8OIw"/>
                   </children>
-                  <children xsi:type="basic:PartStack" xmi:id="_iMu90xRuEeWDAcwd_f8OIw" elementId="right" containerData="5000" selectedElement="_iMu91BRuEeWDAcwd_f8OIw">
+                  <children xsi:type="basic:PartStack" xmi:id="_iMu90xRuEeWDAcwd_f8OIw" elementId="right" visible="false" containerData="5000" selectedElement="_iMu91BRuEeWDAcwd_f8OIw">
                     <tags>newtablook</tags>
                     <tags>org.eclipse.e4.secondaryNavigationStack</tags>
+                    <tags>Minimized</tags>
                     <children xsi:type="advanced:Placeholder" xmi:id="_iMu91BRuEeWDAcwd_f8OIw" elementId="org.eclipse.ui.views.ContentOutline" ref="_ctBMzBRuEeWDAcwd_f8OIw"/>
                     <children xsi:type="advanced:Placeholder" xmi:id="_iMu91RRuEeWDAcwd_f8OIw" elementId="org.eclipse.ui.texteditor.TemplatesView" toBeRendered="false" ref="_iMshgBRuEeWDAcwd_f8OIw"/>
                     <children xsi:type="advanced:Placeholder" xmi:id="_iMu91hRuEeWDAcwd_f8OIw" elementId="org.eclipse.ant.ui.views.AntView" toBeRendered="false" ref="_iMtIkBRuEeWDAcwd_f8OIw"/>
@@ -344,7 +346,7 @@
         <tags>EditorStack</tags>
         <tags>active</tags>
         <children xsi:type="basic:Part" xmi:id="_k9Tn8BRuEeWDAcwd_f8OIw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="TeamMaker.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TeamMaker.java&quot; partName=&quot;TeamMaker.java&quot; title=&quot;TeamMaker.java&quot; tooltip=&quot;TeamMaker/src/TeamMaker.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/TeamMaker/src/TeamMaker.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1291&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TeamMaker.java&quot; partName=&quot;TeamMaker.java&quot; title=&quot;TeamMaker.java&quot; tooltip=&quot;TeamMaker/src/TeamMaker.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/TeamMaker/src/TeamMaker.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1335&quot; selectionTopPixel=&quot;357&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
@@ -597,7 +599,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ckh_IhRuEeWDAcwd_f8OIw" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_Ggmo8McrEeWBk-WDttZ6GQ" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_cE3DohRuEeWDAcwd_f8OIw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_kKQ3p8c6EeWXW_dcKZZ2Hw" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_cE3DohRuEeWDAcwd_f8OIw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ckh_IxRuEeWDAcwd_f8OIw" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -642,7 +644,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ckh_JxRuEeWDAcwd_f8OIw" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_GgqTUMcrEeWBk-WDttZ6GQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_cE3DShRuEeWDAcwd_f8OIw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_kKQ3scc6EeWXW_dcKZZ2Hw" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_cE3DShRuEeWDAcwd_f8OIw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ckh_KBRuEeWDAcwd_f8OIw" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -684,7 +686,14 @@
         <tags>TrimStack</tags>
       </children>
     </trimBars>
-    <trimBars xmi:id="_crh_ARRuEeWDAcwd_f8OIw" elementId="org.eclipse.ui.trim.vertical2" side="Right"/>
+    <trimBars xmi:id="_crh_ARRuEeWDAcwd_f8OIw" elementId="org.eclipse.ui.trim.vertical2" side="Right">
+      <children xsi:type="menu:ToolControl" xmi:id="_p_zusMc6EeWXW_dcKZZ2Hw" elementId="org.eclipse.mylyn.tasks.ui.views.tasksMStack(org.eclipse.jdt.ui.JavaPerspective)" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_qLmvAMc6EeWXW_dcKZZ2Hw" elementId="right(org.eclipse.jdt.ui.JavaPerspective)" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+      </children>
+    </trimBars>
   </children>
   <bindingTables xmi:id="_cEDvUxRuEeWDAcwd_f8OIw" contributorURI="platform:/plugin/org.eclipse.platform" bindingContext="_cEDvVBRuEeWDAcwd_f8OIw">
     <bindings xmi:id="_cFddnxRuEeWDAcwd_f8OIw" keySequence="CTRL+A" command="_cE3CDRRuEeWDAcwd_f8OIw"/>

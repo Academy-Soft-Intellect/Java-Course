@@ -1,0 +1,8 @@
+Team: 1
+	Veronika Asenova
+	Paulina Takova
+	Vladislav Tsvetanov
+Team: 2
+	Albena Kyoseva
+	Danail Zlatanov
+	Ralitsa Vetova
